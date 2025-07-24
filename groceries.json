@@ -1,0 +1,6 @@
+[
+  { "id": "milk", "name": "Milk", "unit": "liters" },
+  { "id": "bread", "name": "Bread", "unit": "loaves" },
+  { "id": "eggs", "name": "Eggs", "unit": "dozen" },
+  { "id": "apples", "name": "Apples", "unit": "pcs" }
+] 

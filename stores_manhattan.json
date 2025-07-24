@@ -1,0 +1,3789 @@
+[
+  {
+    "name": "Jubilee Marketplace",
+    "lat": 40.7082431,
+    "lon": -74.0063359,
+    "address": "99 John St, New York",
+    "place_id": "ChIJ_2plXD1awokRGHC_fgD3uWE"
+  },
+  {
+    "name": "Hudson Greene Market",
+    "lat": 40.7147655,
+    "lon": -74.0347802,
+    "address": "77 Hudson St, Jersey City",
+    "place_id": "ChIJXyL8yKhQwokRXoLtfy0ppY0"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7155877,
+    "lon": -74.0114521,
+    "address": "270 Greenwich St, New York",
+    "place_id": "ChIJl4BZ5opZwokRUR0n7MrTIEA"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7071125,
+    "lon": -74.0119287,
+    "address": "66 Broadway, New York",
+    "place_id": "ChIJ5-eXOKFbwokRYuHJ_OBoMbw"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7104788,
+    "lon": -74.0164333,
+    "address": "315 S End Ave, New York",
+    "place_id": "ChIJLUmujRpawokR3UcxkapDrNU"
+  },
+  {
+    "name": "Key Food Marketplace",
+    "lat": 40.6845587,
+    "lon": -73.9993415,
+    "address": "486 Henry St, Brooklyn",
+    "place_id": "ChIJiSqkRFn6ZUARaMOXUoskcNM"
+  },
+  {
+    "name": "55 Fulton Market by Keyfood",
+    "lat": 40.7087181,
+    "lon": -74.00471859999999,
+    "address": "55 Fulton St, New York",
+    "place_id": "ChIJOWVTySJawokRWpvg58PCzvY"
+  },
+  {
+    "name": "SuperFresh Two Bridges",
+    "lat": 40.7109117,
+    "lon": -74.0002797,
+    "address": "5 St James Pl, New York",
+    "place_id": "ChIJnZaSeSRawokR7gAPHfAeJh0"
+  },
+  {
+    "name": "Bangkok Center Grocery",
+    "lat": 40.7145249,
+    "lon": -73.9993415,
+    "address": "104 Mosco St, New York",
+    "place_id": "ChIJ3R48wiZawokREvCZcKzmLZ8"
+  },
+  {
+    "name": "New York Marts",
+    "lat": 40.713685,
+    "lon": -73.9941826,
+    "address": "75 E Broadway, New York",
+    "place_id": "ChIJay5TvShawokRN57j6xon6ho"
+  },
+  {
+    "name": "Dumbo Market",
+    "lat": 40.7024337,
+    "lon": -73.9903113,
+    "address": "66 Front St, Brooklyn",
+    "place_id": "ChIJY74BA8lbwokR4BrWjkFJf0w"
+  },
+  {
+    "name": "Union Market",
+    "lat": 40.6843352,
+    "lon": -73.9951198,
+    "address": "288 Court St, Brooklyn",
+    "place_id": "ChIJmcJlCKpbwokRmD5_nKDTUBY"
+  },
+  {
+    "name": "Concord Market",
+    "lat": 40.6965516,
+    "lon": -73.9873513,
+    "address": "91 Tillary St, Brooklyn",
+    "place_id": "ChIJc7ATdUpawokRkTIux4DskVc"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.6895837,
+    "lon": -73.9928699,
+    "address": "130 Court St, Brooklyn",
+    "place_id": "ChIJhS5Yr09awokR44Umk8YfdIY"
+  },
+  {
+    "name": "Chinatown Supermarket of Manhattan \u65b0\u4e2d\u83ef\u8d85\u5e02",
+    "lat": 40.71369869999999,
+    "lon": -73.9928845,
+    "address": "109 E Broadway, New York",
+    "place_id": "ChIJCevk6ChawokR1vKA4O1EfMI"
+  },
+  {
+    "name": "Dumbo Market",
+    "lat": 40.68491179999999,
+    "lon": -73.99157029999999,
+    "address": "205 Smith St, Brooklyn",
+    "place_id": "ChIJkx6aXJ1bwokRxt5Mqb6GpCE"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.6978849,
+    "lon": -73.9926259,
+    "address": "101 Clark St, Brooklyn",
+    "place_id": "ChIJ0-tO2jdawokRIYNjSYXAgbk"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.6949016,
+    "lon": -73.9954578,
+    "address": "102 Montague St, Brooklyn",
+    "place_id": "ChIJDQ3ALEZawokRdV83gbc-REo"
+  },
+  {
+    "name": "Brooklyn Fare",
+    "lat": 40.6886913,
+    "lon": -73.9856647,
+    "address": "200 Schermerhorn St, Brooklyn",
+    "place_id": "ChIJc8pOHU1awokRwld5I90vIQ4"
+  },
+  {
+    "name": "NYC Fresh Market",
+    "lat": 40.6934435,
+    "lon": -73.98295949999999,
+    "address": "150 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJD5XsK7VbwokR9-HPSNMNrYo"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.7139858,
+    "lon": -73.9806191,
+    "address": "545 Grand St, New York",
+    "place_id": "ChIJARxMbNVbwokRtgu2aPYoT_8"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.6912253,
+    "lon": -73.9827655,
+    "address": "445 Gold St, Brooklyn",
+    "place_id": "ChIJP2ZvVUtawokR6e567fAOx4M"
+  },
+  {
+    "name": "Wegmans",
+    "lat": 40.698879,
+    "lon": -73.97934599999999,
+    "address": "21 Flushing Ave, Brooklyn",
+    "place_id": "ChIJtQBwWPVbwokR9VDpbdSqQZQ"
+  },
+  {
+    "name": "Waverly Gourmet Market- Neighborhood Supermarket",
+    "lat": 40.6870541,
+    "lon": -73.9663116,
+    "address": "367 Waverly Ave, Brooklyn",
+    "place_id": "ChIJ0eqPlLtbwokRqOnvV7BVrLA"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.6934004,
+    "lon": -73.9735783,
+    "address": "331-337 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJFSTDybdbwokRA9WCf0uwwKU"
+  },
+  {
+    "name": "Central Market",
+    "lat": 40.7068279,
+    "lon": -73.96703149999999,
+    "address": "50 Division Ave, Brooklyn",
+    "place_id": "ChIJvXL6XFZbwokRaKoEtaB3Kv4"
+  },
+  {
+    "name": "City Acres Market",
+    "lat": 40.7109939,
+    "lon": -73.9682784,
+    "address": "11 Broadway, Brooklyn",
+    "place_id": "ChIJVw-nqtlbwokRPCFpRC4_SgM"
+  },
+  {
+    "name": "Mr. Coco",
+    "lat": 40.6930026,
+    "lon": -73.96922889999999,
+    "address": "414 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJ6wLUaLhbwokRCcaXPN50ivM"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.6862137,
+    "lon": -73.9787227,
+    "address": "292 Ashland Pl, Brooklyn",
+    "place_id": "ChIJNewOPrJbwokRkAD8HyPvtdc"
+  },
+  {
+    "name": "Fine Food Supermarket",
+    "lat": 40.7015406,
+    "lon": -73.9842951,
+    "address": "165 York St, Brooklyn",
+    "place_id": "ChIJ8bFIXTNawokRD_oJK_i_tNo"
+  },
+  {
+    "name": "The Food Emporium",
+    "lat": 40.6888136,
+    "lon": -73.9623933,
+    "address": "325 Lafayette Ave, Brooklyn",
+    "place_id": "ChIJjbHc-3lbwokRX93dyCyfCHQ"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.712588,
+    "lon": -73.9574276,
+    "address": "130 Havemeyer St, Brooklyn",
+    "place_id": "ChIJXZqQhV9ZwokRjjQsn3e7dzs"
+  },
+  {
+    "name": "Foodtown of Williamsburg",
+    "lat": 40.71532699999999,
+    "lon": -73.959566,
+    "address": "159 N 3rd St, Brooklyn",
+    "place_id": "ChIJmRhammBZwokRqJpBz1rziLY"
+  },
+  {
+    "name": "Bedford Garden Supermarket",
+    "lat": 40.703557,
+    "lon": -73.9616363,
+    "address": "104 Ross St # A, Brooklyn",
+    "place_id": "ChIJqR59FN1bwokRBMinwJyQl-8"
+  },
+  {
+    "name": "Key Food Supermarket",
+    "lat": 40.6933444,
+    "lon": -73.9652167,
+    "address": "492 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJdUi5qsBbwokRFffrB3DLWpg"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.690586,
+    "lon": -73.95931999999999,
+    "address": "241 Taaffe Pl, Brooklyn",
+    "place_id": "ChIJTawz4r9bwokRKvztxkipzn4"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.6900748,
+    "lon": -73.95499439999999,
+    "address": "991 Bedford Ave, Brooklyn",
+    "place_id": "ChIJ6cIXW3NbwokR8LzMUMLpl_E"
+  },
+  {
+    "name": "New Brooklyn Supermarket",
+    "lat": 40.6970159,
+    "lon": -73.9494003,
+    "address": "535 Marcy Ave, Brooklyn",
+    "place_id": "ChIJ_eZ2a-5bwokRmfAu8wzimOs"
+  },
+  {
+    "name": "Ozzie's Fresh Market",
+    "lat": 40.71151649999999,
+    "lon": -73.9466004,
+    "address": "639 Grand St, Brooklyn",
+    "place_id": "ChIJnxgS61dZwokRv_-bpBVdXQ0"
+  },
+  {
+    "name": "Key Food Supermarket",
+    "lat": 40.6856412,
+    "lon": -73.950498,
+    "address": "367 Nostrand Ave, Brooklyn",
+    "place_id": "ChIJw_4SnZFbwokRxpSzPmXEofE"
+  },
+  {
+    "name": "LINCOLN MARKET",
+    "lat": 40.692961,
+    "lon": -73.9485717,
+    "address": "633 Marcy Ave, Brooklyn",
+    "place_id": "ChIJHz5sLDRbwokRR76xqunD5hc"
+  },
+  {
+    "name": "Metropolitan Citymarket",
+    "lat": 40.685206,
+    "lon": -73.9544397,
+    "address": "1142 Bedford Ave, Brooklyn",
+    "place_id": "ChIJ55KGw5ZbwokRmJIoNTF_v9I"
+  },
+  {
+    "name": "Shop Fair of Williamsburg",
+    "lat": 40.7073414,
+    "lon": -73.9544002,
+    "address": "385 Broadway, Brooklyn",
+    "place_id": "ChIJ9SCtROFbwokRm8fyeRLtvH4"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.7031456,
+    "lon": -73.9450749,
+    "address": "21 Manhattan Ave, Brooklyn",
+    "place_id": "ChIJbzvarftbwokRzU4EGv87H0M"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.6922431,
+    "lon": -73.9419881,
+    "address": "844 DeKalb Ave, Brooklyn",
+    "place_id": "ChIJwzhPfvNbwokRjKfSvVnwtAg"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.71412600000001,
+    "lon": -73.94400159999999,
+    "address": "330 Graham Ave, Brooklyn",
+    "place_id": "ChIJV5lo21ZZwokRQ32CKZv4QKU"
+  },
+  {
+    "name": "Ideal Food Basket of Lafayette Ave",
+    "lat": 40.6909999,
+    "lon": -73.93949959999999,
+    "address": "830 Lafayette Ave, Brooklyn",
+    "place_id": "ChIJVUVc5vRbwokRYp-QeiKHCf4"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.70449989999999,
+    "lon": -73.94114069999999,
+    "address": "91 Humboldt St, Brooklyn",
+    "place_id": "ChIJ7Yt2TflbwokRaIYaiij3Dak"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.7120409,
+    "lon": -73.941713,
+    "address": "785 Grand St, Brooklyn",
+    "place_id": "ChIJAwmz1VVZwokR98Eb3jT5CIc"
+  },
+  {
+    "name": "Ideal Food Basket of Gates Ave",
+    "lat": 40.6873686,
+    "lon": -73.9414978,
+    "address": "631 Gates Ave, Brooklyn",
+    "place_id": "ChIJVcBKf4tbwokRn5FL7ITHiIY"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.6966458,
+    "lon": -73.93626189999999,
+    "address": "1102 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJ1wyl1PdbwokRbdiDPtmRp8k"
+  },
+  {
+    "name": "Green Corner Fish & Farmers Market",
+    "lat": 40.7012663,
+    "lon": -73.94061549999999,
+    "address": "801 Flushing Ave, Brooklyn",
+    "place_id": "ChIJp6oxlPlbwokRMr79y30u_G0"
+  },
+  {
+    "name": "Shop Fair of Myrtle Ave",
+    "lat": 40.6969349,
+    "lon": -73.93749079999999,
+    "address": "1111 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJZUzI-GNbwokRoSWrvlDovZY"
+  },
+  {
+    "name": "Lefkowitz Supermarket",
+    "lat": 40.70574130000001,
+    "lon": -73.96015369999999,
+    "address": "68 Lee Ave, Brooklyn",
+    "place_id": "ChIJ2f8Dj91bwokR1GoP8GwzSMM"
+  },
+  {
+    "name": "Landau's Supermarket",
+    "lat": 40.7017326,
+    "lon": -73.9586514,
+    "address": "650 Bedford Ave, Brooklyn",
+    "place_id": "ChIJT1KhD-hbwokRp5Q-mzA9d-E"
+  },
+  {
+    "name": "Western Beef",
+    "lat": 40.6960309,
+    "lon": -73.94145209999999,
+    "address": "994 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJV0dO2X1bwokRON6aXqptac0"
+  },
+  {
+    "name": "Marcus Market",
+    "lat": 40.6869813,
+    "lon": -73.9387132,
+    "address": "301 Marcus Garvey Blvd, Brooklyn",
+    "place_id": "ChIJF7WS_4pbwokRoudts-cWrSc"
+  },
+  {
+    "name": "Dekalb Fresh Market",
+    "lat": 40.69256439999999,
+    "lon": -73.94319209999999,
+    "address": "825 DeKalb Ave, Brooklyn",
+    "place_id": "ChIJaSWj-ldbwokRSS_p_1JMEds"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.6865511,
+    "lon": -73.9299305,
+    "address": "200 Malcolm X Blvd, Brooklyn",
+    "place_id": "ChIJ7aGeY3NcwokRVf72Sz5nbx8"
+  },
+  {
+    "name": "Mr.Kiwi",
+    "lat": 40.6969344,
+    "lon": -73.9347818,
+    "address": "957 Broadway, Brooklyn",
+    "place_id": "ChIJnV8LNwhcwokRKWafZ1RwNg4"
+  },
+  {
+    "name": "Food Story Natural Market",
+    "lat": 40.7050311,
+    "lon": -73.93310509999999,
+    "address": "40 Bogart St, Brooklyn",
+    "place_id": "ChIJhxfT4QBcwokRPYUycizz8js"
+  },
+  {
+    "name": "Central Supermarket",
+    "lat": 40.7001603,
+    "lon": -73.92902509999999,
+    "address": "112 Central Ave, Brooklyn",
+    "place_id": "ChIJI0fezgVcwokRDApO_hpaeC0"
+  },
+  {
+    "name": "Foodtown of Noll",
+    "lat": 40.7007261,
+    "lon": -73.9332443,
+    "address": "54 A Noll St, Brooklyn",
+    "place_id": "ChIJzar-UgBdwokRXv-dYC2D1L0"
+  },
+  {
+    "name": "MYRTLE FARMERS MARKET",
+    "lat": 40.6979876,
+    "lon": -73.9279372,
+    "address": "605 Hart St, Brooklyn",
+    "place_id": "ChIJsZchyeddwokRNnA4nwp2rvs"
+  },
+  {
+    "name": "Chestnut Supermarket",
+    "lat": 40.6945372,
+    "lon": -73.9555941,
+    "address": "700 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJq6qqqv5bwokRsowFucvpASw"
+  },
+  {
+    "name": "City Fresh Market - Bushwick",
+    "lat": 40.7029747,
+    "lon": -73.9255093,
+    "address": "229 Knickerbocker Ave #2401, Brooklyn",
+    "place_id": "ChIJR3vZXANcwokRc0ytxmaTrQA"
+  },
+  {
+    "name": "Foodtown of Bushwick",
+    "lat": 40.6909383,
+    "lon": -73.92412790000002,
+    "address": "1291 Broadway, Brooklyn",
+    "place_id": "ChIJuefldRJcwokR9UgBR0AwZsY"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.70464,
+    "lon": -73.9202324,
+    "address": "72-80 Wyckoff Ave, Brooklyn",
+    "place_id": "ChIJi5XNuR1cwokR5cYl3D-pZ0g"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.6866288,
+    "lon": -73.9165567,
+    "address": "1533 Broadway #1541, Brooklyn",
+    "place_id": "ChIJ7TItzBRcwokRsM0tTxG2UWs"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.6981708,
+    "lon": -73.9259965,
+    "address": "1305 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJBSAnRQVcwokRVrW0yp4VYA8"
+  },
+  {
+    "name": "Met Fresh of Bushwick",
+    "lat": 40.6987881,
+    "lon": -73.920951,
+    "address": "1381 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJIQrEqhtdwokRg2dGKWGvTng"
+  },
+  {
+    "name": "Green Valley",
+    "lat": 40.70215109999999,
+    "lon": -73.92466139999999,
+    "address": "268 Knickerbocker Ave, Brooklyn",
+    "place_id": "ChIJ61PRf3ZdwokRHoYnfgjZmcs"
+  },
+  {
+    "name": "Howard Marketplace",
+    "lat": 40.6884379,
+    "lon": -73.9214006,
+    "address": "8 Howard Ave, Brooklyn",
+    "place_id": "ChIJweROFjxdwokRSEnzVH15C04"
+  },
+  {
+    "name": "Western Beef Supermarket",
+    "lat": 40.7141938,
+    "lon": -73.9198147,
+    "address": "47-05 Metropolitan Ave, Ridgewood",
+    "place_id": "ChIJ8ypajKRewokRv4t0WcP_Pqg"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.6948126,
+    "lon": -73.9198891,
+    "address": "346 Central Ave, Brooklyn",
+    "place_id": "ChIJUeZmwhBcwokRxf9v1RUt7mM"
+  },
+  {
+    "name": "Associated Supermarket of Ridgewood",
+    "lat": 40.7076551,
+    "lon": -73.91563579999999,
+    "address": "3-33 Seneca Ave, Flushing",
+    "place_id": "ChIJRSD_YyZcwokR7uLiqekX-RY"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.700721,
+    "lon": -73.910724,
+    "address": "15-90 Gates Ave, Ridgewood",
+    "place_id": "ChIJO9aqjiFcwokR8PlWf5vjAa8"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.6982548,
+    "lon": -73.9094349,
+    "address": "454 Wyckoff Ave, Brooklyn",
+    "place_id": "ChIJk3ydzrFdwokRwhZdtp_TLnM"
+  },
+  {
+    "name": "Myrtle Ave Supermarket",
+    "lat": 40.6989782,
+    "lon": -73.9157848,
+    "address": "1470 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJm390BBlcwokRpUoH5ryez5g"
+  },
+  {
+    "name": "Pioneer Supermarkets of Bushwick",
+    "lat": 40.6846684,
+    "lon": -73.9132482,
+    "address": "1657 Broadway, Brooklyn",
+    "place_id": "ChIJKW0-mGpcwokRylHVwVCF90o"
+  },
+  {
+    "name": "Food Story Natural Market",
+    "lat": 40.699387,
+    "lon": -73.9115978,
+    "address": "1552 Myrtle Ave, Brooklyn",
+    "place_id": "ChIJYS0f4iddwokRjUI74Iz-5P4"
+  },
+  {
+    "name": "Horseradish Market",
+    "lat": 40.6989863,
+    "lon": -73.938565,
+    "address": "839 Broadway, Brooklyn",
+    "place_id": "ChIJVf8dX5JbwokRYQJPyeQU2yY"
+  },
+  {
+    "name": "Fresh n save (Key Food)",
+    "lat": 40.7003762,
+    "lon": -73.89772339999999,
+    "address": "60-16 Myrtle Ave, Ridgewood",
+    "place_id": "ChIJUb-4AylcwokRWrmOn0ut48Q"
+  },
+  {
+    "name": "Billy's Marketplace",
+    "lat": 40.6994439,
+    "lon": -73.9055278,
+    "address": "8-70 Cypress Ave, Ridgewood",
+    "place_id": "ChIJSWp2CCFcwokRNIa7mRL0oCE"
+  },
+  {
+    "name": "SuperFresh Supermarket",
+    "lat": 40.7002206,
+    "lon": -73.9035384,
+    "address": "9-20 Seneca Ave, Ridgewood",
+    "place_id": "ChIJRSD_YyZcwokRJ3MgkJkmm88"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.7102105,
+    "lon": -73.8989303,
+    "address": "64-01 Fresh Pond Rd, Ridgewood",
+    "place_id": "ChIJK-TQcC1fwokR2CIy4PcxZiM"
+  },
+  {
+    "name": "C-Town Farmers Market",
+    "lat": 40.7124195,
+    "lon": -73.9055636,
+    "address": "58-02 Metropolitan Ave, Ridgewood",
+    "place_id": "ChIJD5t1DA5fwokRCqsieWeLB4g"
+  },
+  {
+    "name": "Biedronka",
+    "lat": 40.7006558,
+    "lon": -73.8977077,
+    "address": "60-15 Myrtle Ave, Flushing",
+    "place_id": "ChIJrfUn_ihcwokRZEgTrP16sl4"
+  },
+  {
+    "name": "Valentino Food Market",
+    "lat": 40.7069303,
+    "lon": -73.8973082,
+    "address": "66-64 Fresh Pond Rd, Ridgewood",
+    "place_id": "ChIJWWBFoYNewokRL2V9Sn2Djcw"
+  },
+  {
+    "name": "Vitelio's Marketplace (Key Food)",
+    "lat": 40.70396530000001,
+    "lon": -73.9044454,
+    "address": "18-83 Madison St, Ridgewood",
+    "place_id": "ChIJxQQveydcwokRIktRBklSCGg"
+  },
+  {
+    "name": "stop one supermarket",
+    "lat": 40.689358,
+    "lon": -73.9060101,
+    "address": "624 Wilson Ave, Brooklyn",
+    "place_id": "ChIJC2dYUDlcwokRjHv3fQqWV18"
+  },
+  {
+    "name": "Halsey Traders Market",
+    "lat": 40.6843246,
+    "lon": -73.9290161,
+    "address": "587 Halsey St, Brooklyn",
+    "place_id": "ChIJgc_H7HNcwokRGQbrrGcvpbc"
+  },
+  {
+    "name": "Good Neighbors Supermarket",
+    "lat": 40.70062619999999,
+    "lon": -73.8988821,
+    "address": "59-29 Myrtle Ave, Ridgewood",
+    "place_id": "ChIJ5WipfaddwokRkBToXMKuxcQ"
+  },
+  {
+    "name": "Met Fresh of Ridgewood",
+    "lat": 40.705924,
+    "lon": -73.8960711,
+    "address": "67-09 Fresh Pond Rd, Ridgewood",
+    "place_id": "ChIJKQyV7rxfwokRu18euJtTyaE"
+  },
+  {
+    "name": "ShopRite of Metro Plaza",
+    "lat": 40.723039,
+    "lon": -74.0396509,
+    "address": "400 Marin Blvd, Metro Pl Dr",
+    "place_id": "ChIJzYshu1NXwokRxVl_YLPzUgQ"
+  },
+  {
+    "name": "Key Food Fresh & Natural",
+    "lat": 40.7232426,
+    "lon": -74.0456641,
+    "address": "574 Jersey Ave, Jersey City",
+    "place_id": "ChIJBcZIFrNQwokRvJng_9CSxU8"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7180058,
+    "lon": -74.0369377,
+    "address": "135 Greene St, Jersey City",
+    "place_id": "ChIJ45jCdx1RwokRnrsS04xabIE"
+  },
+  {
+    "name": "P & K Fruit Market",
+    "lat": 40.72125310000001,
+    "lon": -74.0449088,
+    "address": "170 Newark Ave, Jersey City",
+    "place_id": "ChIJG7iesbNQwokR6ZZpe8MVuXc"
+  },
+  {
+    "name": "Deluxe Food Market",
+    "lat": 40.7180312,
+    "lon": -73.9962425,
+    "address": "79 Elizabeth St, New York",
+    "place_id": "ChIJ4-6CIohZwokR0PcvfO7kI2Q"
+  },
+  {
+    "name": "New York Mart",
+    "lat": 40.71850389999999,
+    "lon": -73.9966318,
+    "address": "128 Mott St, New York",
+    "place_id": "ChIJPWPIPohZwokRT8UQVzKe9PQ"
+  },
+  {
+    "name": "Gourmet Garage of SOHO",
+    "lat": 40.7226308,
+    "lon": -74.0016502,
+    "address": "489 Broome St, New York",
+    "place_id": "ChIJ9zjD4vhZwokRjJ0Tp5SWtf0"
+  },
+  {
+    "name": "Sunrise Mart \u65e5\u7cfb\u30b9\u30fc\u30d1\u30fc",
+    "lat": 40.7232614,
+    "lon": -74.0025754,
+    "address": "494 Broome St, New York",
+    "place_id": "ChIJiyWSiYtZwokRoefl4pFH9JU"
+  },
+  {
+    "name": "Mulberry Market NYC",
+    "lat": 40.7232282,
+    "lon": -73.9958729,
+    "address": "251 Mulberry St, New York",
+    "place_id": "ChIJu_v7u9xZwokRU0MP_AbCAac"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7238246,
+    "lon": -73.99231019999999,
+    "address": "95 E Houston St, New York",
+    "place_id": "ChIJQ5yUr4VZwokRbMN-yaOarmc"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7164903,
+    "lon": -73.9867718,
+    "address": "400 Grand St Cellar, New York",
+    "place_id": "ChIJ9WABQ8hZwokR59mUJakO9IA"
+  },
+  {
+    "name": "Union Market",
+    "lat": 40.7223638,
+    "lon": -73.9859359,
+    "address": "240 E Houston St, New York",
+    "place_id": "ChIJaxvWroVZwokReqjdeMaSIF4"
+  },
+  {
+    "name": "The Food Emporium",
+    "lat": 40.7224031,
+    "lon": -73.9771619,
+    "address": "71 Avenue D, New York",
+    "place_id": "ChIJfaJZbdFZwokRoBHf9p8KXFQ"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.7171382,
+    "lon": -73.9804011,
+    "address": "43 Columbia St, New York",
+    "place_id": "ChIJNejms39ZwokRqv5JQZQqPn4"
+  },
+  {
+    "name": "Shop Fair of Alphabet City",
+    "lat": 40.7221066,
+    "lon": -73.9801239,
+    "address": "42 Loisaida Ave, New York",
+    "place_id": "ChIJ0QC6gZBZwokRM--SA05dKrk"
+  },
+  {
+    "name": "Key Food Urban Marketplace",
+    "lat": 40.7240488,
+    "lon": -73.98480889999999,
+    "address": "52 Avenue A, New York",
+    "place_id": "ChIJA6sY7IJZwokRxp8qLVci8JA"
+  },
+  {
+    "name": "Associated Supermarkets of Alphabet City",
+    "lat": 40.7246905,
+    "lon": -73.9786883,
+    "address": "123 Loisaida Ave, New York",
+    "place_id": "ChIJSxJS4HlZwokR1RIP2fu3yH4"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7180932,
+    "lon": -73.9643128,
+    "address": "200 Kent Ave, Brooklyn",
+    "place_id": "ChIJyWDn6ndZwokR234SqsAnT_s"
+  },
+  {
+    "name": "Brooklyn Harvest Market",
+    "lat": 40.7194478,
+    "lon": -73.9628871,
+    "address": "25 N 5th St, Brooklyn",
+    "place_id": "ChIJUyfNA2dZwokRIeP8LZRIVRk"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.71614090000001,
+    "lon": -73.9597096,
+    "address": "238 Bedford Ave, Brooklyn",
+    "place_id": "ChIJRyyQoGBZwokR2ISrdKgCsdo"
+  },
+  {
+    "name": "Spring Mart",
+    "lat": 40.7214935,
+    "lon": -73.9954266,
+    "address": "202 Mott St, New York",
+    "place_id": "ChIJXUa8pIhZwokRiGoUKuh1Hn4"
+  },
+  {
+    "name": "Met Foodmarkets of Greenpoint",
+    "lat": 40.7228888,
+    "lon": -73.9437891,
+    "address": "131 Driggs Ave, Brooklyn",
+    "place_id": "ChIJGfDg705ZwokRvqa_3iQAPsQ"
+  },
+  {
+    "name": "City Fresh Market",
+    "lat": 40.7179261,
+    "lon": -73.9406202,
+    "address": "57 Kingsland Ave, Brooklyn",
+    "place_id": "ChIJBynyo05ZwokRXNL1baui7ik"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.7248346,
+    "lon": -73.896855,
+    "address": "66-56 Grand Ave, Maspeth",
+    "place_id": "ChIJuRq22LBfwokRJwePO7lY-oY"
+  },
+  {
+    "name": "Maspeth Marketplace",
+    "lat": 40.724716,
+    "lon": -73.898366,
+    "address": "66-17 Grand Ave, Maspeth",
+    "place_id": "ChIJh4I5PfRewokRhpz6YWVUKik"
+  },
+  {
+    "name": "Brooklyn Fare",
+    "lat": 40.7321288,
+    "lon": -74.00789739999999,
+    "address": "666 Greenwich St, New York",
+    "place_id": "ChIJ8xNU3exZwokRxUB9Eja0bm4"
+  },
+  {
+    "name": "MORTON WILLIAMS SUPERMARKETS",
+    "lat": 40.7297245,
+    "lon": -74.0323762,
+    "address": "105 River Dr, Jersey City",
+    "place_id": "ChIJhT_zRVZXwokRGXxdWtapxz0"
+  },
+  {
+    "name": "ACME Markets",
+    "lat": 40.7329254,
+    "lon": -74.0375526,
+    "address": "125 18th St, Jersey City",
+    "place_id": "ChIJ0crvmVBXwokRvLcR0kFuqj0"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7257485,
+    "lon": -74.0048949,
+    "address": "233 Spring St, New York",
+    "place_id": "ChIJZd0F3oxZwokRiaEouMZKQ-0"
+  },
+  {
+    "name": "MORTON WILLIAMS SUPERMARKETS",
+    "lat": 40.7278082,
+    "lon": -73.9987738,
+    "address": "130 Bleecker St, New York",
+    "place_id": "ChIJbcsU2ZFZwokRL9esxzwOzEE"
+  },
+  {
+    "name": "Citarella Gourmet Market - West Village",
+    "lat": 40.7343679,
+    "lon": -73.99871689999999,
+    "address": "424 6th Ave, New York",
+    "place_id": "ChIJ5U3z65ZZwokRntjySncc3Tg"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.732975,
+    "lon": -74.0023878,
+    "address": "3 Sheridan Square, New York",
+    "place_id": "ChIJD5IHjJNZwokR2LWtM6CsVak"
+  },
+  {
+    "name": "Target Grocery",
+    "lat": 40.7164903,
+    "lon": -73.9867718,
+    "address": "400 Grand St, New York",
+    "place_id": "ChIJ4UzQvW1ZwokRbrUkDnftcUE"
+  },
+  {
+    "name": "Tashkent Supermarket Halal Food",
+    "lat": 40.7330119,
+    "lon": -73.99979789999999,
+    "address": "378 6th Ave, New York",
+    "place_id": "ChIJjeNCRABZwokRvUzW5Mqg4vc"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7317949,
+    "lon": -73.9944161,
+    "address": "25 University Pl, New York",
+    "place_id": "ChIJpQ_bA5pZwokR8d0QzoqvBcQ"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7346935,
+    "lon": -73.9912519,
+    "address": "4 Union Square E, New York",
+    "place_id": "ChIJlZFg95hZwokRzTo2UWdo0Lg"
+  },
+  {
+    "name": "Wegmans",
+    "lat": 40.7302556,
+    "lon": -73.99116409999999,
+    "address": "770 Broadway, New York",
+    "place_id": "ChIJi55dls1ZwokRxkPrB3wNNXs"
+  },
+  {
+    "name": "D\u2019Agostino at 20th Street",
+    "lat": 40.7354528,
+    "lon": -73.97995569999999,
+    "address": "355 1st Ave, New York",
+    "place_id": "ChIJa_pcDRVZwokRr7s1g2oSjRY"
+  },
+  {
+    "name": "Space Market",
+    "lat": 40.7308779,
+    "lon": -73.99519,
+    "address": "1 University Pl # 1, New York",
+    "place_id": "ChIJ90vZnpBZwokRIU-yi8A_y18"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.73051239999999,
+    "lon": -73.980981,
+    "address": "436 E 14th St, New York",
+    "place_id": "ChIJIVZfRRpZwokR1GJQ1hL-mQQ"
+  },
+  {
+    "name": "Gracefully",
+    "lat": 40.73413920000001,
+    "lon": -73.9801884,
+    "address": "320 1st Ave, New York",
+    "place_id": "ChIJXzYPJ3VZwokRkCMMrN_fG7E"
+  },
+  {
+    "name": "H Mart Manhattan",
+    "lat": 40.7303604,
+    "lon": -73.98895019999999,
+    "address": "39 3rd Ave, New York",
+    "place_id": "ChIJgYe2K3NZwokR8rnjCYKqIaI"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7333532,
+    "lon": -73.9878949,
+    "address": "142 E 14th St, New York",
+    "place_id": "ChIJa5oiKJ9ZwokR4EX7HlQSstY"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.726728,
+    "lon": -73.97639579999999,
+    "address": "188 Ave. C, New York",
+    "place_id": "ChIJBcFjIHFZwokRfUnr8tR8SCU"
+  },
+  {
+    "name": "Biedronka",
+    "lat": 40.7291583,
+    "lon": -73.95364339999999,
+    "address": "854 Manhattan Ave, Brooklyn",
+    "place_id": "ChIJm8eBykBZwokRjPDwl5D-oDE"
+  },
+  {
+    "name": "Associated Supermarkets of Greenpoint",
+    "lat": 40.7280228,
+    "lon": -73.9529423,
+    "address": "802 Manhattan Ave, Brooklyn",
+    "place_id": "ChIJ-VYyzkZZwokRLaDlVih5Qzs"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.7299089,
+    "lon": -73.95097919999999,
+    "address": "224 McGuinness Blvd, Brooklyn",
+    "place_id": "ChIJM6XhdkdZwokR2FInILnIEm4"
+  },
+  {
+    "name": "Jubilee Marketplace (Supermarket)",
+    "lat": 40.7321227,
+    "lon": -73.9598154,
+    "address": "145 West St, Brooklyn",
+    "place_id": "ChIJn_-oYIpZwokRD1BvQTvnd2c"
+  },
+  {
+    "name": "Market Fresh Supermarket",
+    "lat": 40.7317231,
+    "lon": -73.8998821,
+    "address": "52-65 65th Pl, Maspeth",
+    "place_id": "ChIJa9dZwjJfwokR2AOt5bcRb30"
+  },
+  {
+    "name": "ACME Markets",
+    "lat": 40.74534,
+    "lon": -74.03388660000002,
+    "address": "614 Clinton St, Hoboken",
+    "place_id": "ChIJoa6NHmFXwokRZVsz7GCIkjE"
+  },
+  {
+    "name": "Supremo Food Market of Jersey City",
+    "lat": 40.73969779999999,
+    "lon": -74.0472035,
+    "address": "323 Palisade Ave, Jersey City",
+    "place_id": "ChIJYZHHAERXwokRCO8vFTlIxEU"
+  },
+  {
+    "name": "D'Agostino Grocery Store",
+    "lat": 40.7370998,
+    "lon": -74.006604,
+    "address": "790 Greenwich St, New York",
+    "place_id": "ChIJX3XWzOpZwokRlfdNVjB69bo"
+  },
+  {
+    "name": "Aspen Marketplace",
+    "lat": 40.7397099,
+    "lon": -74.0304184,
+    "address": "226 Washington St #28, Hoboken",
+    "place_id": "ChIJp9TCgl9XwokR94d18jNR-uc"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.74445300000001,
+    "lon": -73.99954199999999,
+    "address": "225 8th Ave, New York",
+    "place_id": "ChIJ009fxrtZwokRil2jg6rDi2c"
+  },
+  {
+    "name": "Fairway Market of Chelsea",
+    "lat": 40.7445028,
+    "lon": -73.99142499999999,
+    "address": "766 6th Ave, New York",
+    "place_id": "ChIJi6wqqaVZwokRGr5R0dVtAbg"
+  },
+  {
+    "name": "Morton Williams Supermarkets",
+    "lat": 40.7394127,
+    "lon": -73.98725379999999,
+    "address": "278 Park Ave S, New York",
+    "place_id": "ChIJuxB7FqFZwokRZM2omDcGNb0"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7420901,
+    "lon": -73.9941211,
+    "address": "675 6th Ave, New York",
+    "place_id": "ChIJI5xCX6NZwokR3jdSQwsw2DI"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7449592,
+    "lon": -73.99529129999999,
+    "address": "250 7th Ave, New York",
+    "place_id": "ChIJu9jzyANbwokRIb60wMQSvqQ"
+  },
+  {
+    "name": "MORTON WILLIAMS SUPERMARKETS",
+    "lat": 40.737805,
+    "lon": -73.9801043,
+    "address": "313 E 23rd St, New York",
+    "place_id": "ChIJucv6UgpZwokRc_1ic0idaSw"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7439882,
+    "lon": -73.97908389999999,
+    "address": "200 E 32nd St, New York",
+    "place_id": "ChIJH_ZOmghZwokRa20TcxP_Bfs"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7437483,
+    "lon": -73.9855594,
+    "address": "63 Madison Ave, New York",
+    "place_id": "ChIJkTgowqdZwokR9eCCOtg2iB0"
+  },
+  {
+    "name": "Fairway Market Kips Bay",
+    "lat": 40.7424641,
+    "lon": -73.9770711,
+    "address": "550 2nd Ave, New York",
+    "place_id": "ChIJVY3s0ghZwokR6e1D8qjJL1k"
+  },
+  {
+    "name": "D'agostino Supermarkets Inc",
+    "lat": 40.7402591,
+    "lon": -73.9818792,
+    "address": "341 3rd Ave, New York",
+    "place_id": "ChIJscem9QlZwokRYogeDXCCzhk"
+  },
+  {
+    "name": "Foodcellar Market",
+    "lat": 40.7455427,
+    "lon": -73.9563373,
+    "address": "4-85 47th Rd, Long Island City",
+    "place_id": "ChIJF9lZMyJZwokRRMRyCnyUhOM"
+  },
+  {
+    "name": "Urban Market",
+    "lat": 40.7434468,
+    "lon": -73.95828,
+    "address": "50-01 2nd St, Long Island City",
+    "place_id": "ChIJvU8G7CJZwokR2z-3o4qt3Jg"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.7319198,
+    "lon": -73.9548616,
+    "address": "953 Manhattan Ave, Brooklyn",
+    "place_id": "ChIJw73YXD9ZwokRyN5gg4Lnohk"
+  },
+  {
+    "name": "Key Food Fresh n save",
+    "lat": 40.7428779,
+    "lon": -73.918629,
+    "address": "46-02 Queens Blvd, Sunnyside",
+    "place_id": "ChIJ2ZaYM9lewokRd0-_Iqyddf0"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.7452778,
+    "lon": -73.92,
+    "address": "44-07 43rd Ave, Sunnyside",
+    "place_id": "ChIJ55IOi9hewokRZrFsaLhlRUI"
+  },
+  {
+    "name": "Green Valley Marketplace of Sunnyside",
+    "lat": 40.7415696,
+    "lon": -73.9207667,
+    "address": "44-07 Greenpoint Ave, Sunnyside",
+    "place_id": "ChIJCUpae9lewokRsMRV2u6IdCM"
+  },
+  {
+    "name": "Parrot Coffee Market Place 1",
+    "lat": 40.7434776,
+    "lon": -73.9188793,
+    "address": "45-15 Queens Blvd, Sunnyside",
+    "place_id": "ChIJtcgPGYFfwokRRX0VjcLsQTU"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.7410224,
+    "lon": -73.9036689,
+    "address": "61-10 Queens Blvd, Woodside",
+    "place_id": "ChIJYwfwAONewokR-kd2cKaasU0"
+  },
+  {
+    "name": "Associated Supermarket",
+    "lat": 40.745561,
+    "lon": -73.9048385,
+    "address": "59-15 Roosevelt Ave, Woodside",
+    "place_id": "ChIJuT0D1KVfwokRBqoGgg0ZQL0"
+  },
+  {
+    "name": "H Mart Woodside",
+    "lat": 40.7450234,
+    "lon": -73.90500440000001,
+    "address": "59-18 Woodside Ave, Flushing",
+    "place_id": "ChIJj1PbSlFfwokRPoH1gpEBG8I"
+  },
+  {
+    "name": "NYC green supermarket",
+    "lat": 40.7411499,
+    "lon": -73.91736990000001,
+    "address": "45-62 48th St, Flushing",
+    "place_id": "ChIJKcfQVABfwokRhEMRZdQUVmY"
+  },
+  {
+    "name": "D & Z Supermarket",
+    "lat": 40.7380883,
+    "lon": -73.88631649999999,
+    "address": "77-00 Queens Blvd, Elmhurst",
+    "place_id": "ChIJ7eBDLplgwokRhNbXFEuqpuo"
+  },
+  {
+    "name": "ShopRite of Hoboken",
+    "lat": 40.7498225,
+    "lon": -74.0363692,
+    "address": "900 Madison St, Hoboken",
+    "place_id": "ChIJSRGTcWRXwokRL9EfNOjS_rM"
+  },
+  {
+    "name": "Kings Food Markets",
+    "lat": 40.7517868,
+    "lon": -74.0251464,
+    "address": "1212 Shipyard Ln, Hoboken",
+    "place_id": "ChIJ310o3tlZwokRgV_-L1n6O5Q"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7536747,
+    "lon": -74.02994919999999,
+    "address": "1350 Willow Ave, Hoboken",
+    "place_id": "ChIJp1Mu19dZwokRe8ZJZAMVHMQ"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.7551067,
+    "lon": -74.0424081,
+    "address": "601 4th St, Union City",
+    "place_id": "ChIJk9gOcXBXwokR-NKHxkJR7Wo"
+  },
+  {
+    "name": "Urban Market of Hoboken",
+    "lat": 40.7540182,
+    "lon": -74.02565729999999,
+    "address": "1425 Washington St, Hoboken",
+    "place_id": "ChIJo8WtYABZwokRxiljtefjAiw"
+  },
+  {
+    "name": "Prime Food Market",
+    "lat": 40.728924,
+    "lon": -74.0412979,
+    "address": "180 10th St, Jersey City",
+    "place_id": "ChIJdYmo-VFXwokRvvZHgCVZGaY"
+  },
+  {
+    "name": "Gabriel\u2019s Market",
+    "lat": 40.7519112,
+    "lon": -74.0451283,
+    "address": "508 Central Ave, Jersey City",
+    "place_id": "ChIJly9T5NxXwokRe6WiBPCIioA"
+  },
+  {
+    "name": "BB Gourmet",
+    "lat": 40.7470263,
+    "lon": -74.0281881,
+    "address": "828 Washington St, Hoboken",
+    "place_id": "ChIJlRQezNhZwokR1-yLgKgpDWk"
+  },
+  {
+    "name": "Ideal Marketplace",
+    "lat": 40.750044,
+    "lon": -73.99897159999999,
+    "address": "317 9th Ave, New York",
+    "place_id": "ChIJC3uw4bBZwokRRfZx1CYDMFM"
+  },
+  {
+    "name": "Hudson Market",
+    "lat": 40.7507083,
+    "lon": -74.00243739999999,
+    "address": "303 10th Ave, New York",
+    "place_id": "ChIJmx0q4bZZwokRRwFIouEJ3m4"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7470808,
+    "lon": -74.0011597,
+    "address": "225 9TH AVE, W 24 St, New York",
+    "place_id": "ChIJw_nz8LlZwokRmqV8XDTlEXk"
+  },
+  {
+    "name": "jacks. - W 40th St",
+    "lat": 40.7553548,
+    "lon": -73.98904019999999,
+    "address": "223 W 40th St, New York",
+    "place_id": "ChIJ-5S9p6xZwokR8ANHDymasg8"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7545529,
+    "lon": -73.984657,
+    "address": "1095 6th Ave, New York",
+    "place_id": "ChIJC2AqwapZwokR2O17hSVPjrE"
+  },
+  {
+    "name": "D'Agostino Supermarkets Inc",
+    "lat": 40.7465804,
+    "lon": -73.9777454,
+    "address": "528 3rd Ave, New York",
+    "place_id": "ChIJw7VKFwRZwokRVJgwZnK-eEY"
+  },
+  {
+    "name": "Morton Williams Supermarkets",
+    "lat": 40.7538163,
+    "lon": -73.96909819999999,
+    "address": "908 2nd Ave, New York",
+    "place_id": "ChIJwdELkOJYwokRgSJOA1wL2Mo"
+  },
+  {
+    "name": "LINCOLN MARKET",
+    "lat": 40.737047,
+    "lon": -73.9555584,
+    "address": "1133 Manhattan Ave, Brooklyn",
+    "place_id": "ChIJARR6LzxZwokRARVMat1Zi1k"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.745821,
+    "lon": -73.9461183,
+    "address": "22-43 Jackson Ave, Long Island City",
+    "place_id": "ChIJieKUCG5ZwokRcFYGfu1T0Sc"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.7556331,
+    "lon": -73.94507469999999,
+    "address": "10-07 41st Ave, Long Island City",
+    "place_id": "ChIJoRx03NBYwokRmnSe8gmbb4w"
+  },
+  {
+    "name": "Hudson Food Market",
+    "lat": 40.7499554,
+    "lon": -73.93733759999999,
+    "address": "29-11 Queens Plaza N, Astoria",
+    "place_id": "ChIJ-f_tFdVYwokR9Wa5OS0TLqQ"
+  },
+  {
+    "name": "Foodcellar Market Court Square",
+    "lat": 40.74821499999999,
+    "lon": -73.942964,
+    "address": "43-18 Crescent St, Long Island City",
+    "place_id": "ChIJrxoW7ilZwokR4TE0795R2DQ"
+  },
+  {
+    "name": "D'Agostino at 38th Street",
+    "lat": 40.7484121,
+    "lon": -73.976389,
+    "address": "578 3rd Ave, New York",
+    "place_id": "ChIJWcCBntxZwokRL1USGv-jU9o"
+  },
+  {
+    "name": "Mom & Pop's Organic Market",
+    "lat": 40.7299134,
+    "lon": -73.9542685,
+    "address": "889 Manhattan Ave, Brooklyn",
+    "place_id": "ChIJJSxAyEBZwokROofQWj3xRVg"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.7521249,
+    "lon": -73.921528,
+    "address": "42-02 Northern Blvd, Long Island City",
+    "place_id": "ChIJh-ZryyVfwokR-tg5HCfSNtI"
+  },
+  {
+    "name": "Fresh n Save Marketplace",
+    "lat": 40.74596880000001,
+    "lon": -73.9138097,
+    "address": "50-18 Skillman Ave, Woodside",
+    "place_id": "ChIJ2VLPEyBfwokRor6odK-FcGU"
+  },
+  {
+    "name": "Food is Love Supermarket",
+    "lat": 40.7554217,
+    "lon": -73.9120916,
+    "address": "48-18 Broadway, Astoria",
+    "place_id": "ChIJByIp_RdfwokRS4PiNHUxn1o"
+  },
+  {
+    "name": "Fresh N Save Marketplace",
+    "lat": 40.7458927,
+    "lon": -73.90178949999999,
+    "address": "62-09 Roosevelt Ave, Woodside",
+    "place_id": "ChIJ604kJx1fwokR3EPiuRzXI44"
+  },
+  {
+    "name": "Food Express Supermarket",
+    "lat": 40.74556,
+    "lon": -73.90109819999999,
+    "address": "39-39 63rd St, Woodside",
+    "place_id": "ChIJwzlmLB1fwokRnr-0j7DB0Kw"
+  },
+  {
+    "name": "Bergenline Marketplace",
+    "lat": 40.7645943,
+    "lon": -74.0346789,
+    "address": "1911-13 Bergenline Ave, Union City",
+    "place_id": "ChIJ5-isnoFXwokRGeeothU-5KY"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.7597318,
+    "lon": -74.03564759999999,
+    "address": "1208 New York Ave, Union City",
+    "place_id": "ChIJa4MjsxZXwokRiUQwzeG1P-Q"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7615004,
+    "lon": -74.0223851,
+    "address": "1400 Waterfront Terrace, Weehawken Township",
+    "place_id": "ChIJQcjIYsJZwokRc_Xx-R6sRPk"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.7645326,
+    "lon": -74.0441495,
+    "address": "1425 John F. Kennedy Blvd, North Bergen",
+    "place_id": "ChIJQRn_cJ1XwokRYY6JVmrM0vc"
+  },
+  {
+    "name": "Tropical Supermarket",
+    "lat": 40.7597269,
+    "lon": -74.03563419999999,
+    "address": "1208 New York Ave, Union City",
+    "place_id": "ChIJC1KR035XwokROZE3BbAyIdE"
+  },
+  {
+    "name": "La Estrella",
+    "lat": 40.7585176,
+    "lon": -74.03847689999999,
+    "address": "1005 Bergenline Ave, Union City",
+    "place_id": "ChIJRRfAeXlXwokR2T9ACLjsfXk"
+  },
+  {
+    "name": "Brooklyn Fare",
+    "lat": 40.7561219,
+    "lon": -73.99652569999999,
+    "address": "431 W 37th St, New York",
+    "place_id": "ChIJEVzKxrJZwokR9P9raTunFws"
+  },
+  {
+    "name": "Sunac Natural Market | Midtown west Deli | Supermarket",
+    "lat": 40.7607137,
+    "lon": -73.9987215,
+    "address": "600 W 42nd St, New York",
+    "place_id": "ChIJhxUXQkxYwokRy4IsJWsC-2Q"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7528918,
+    "lon": -73.99973709999999,
+    "address": "450 W 33rd St, New York",
+    "place_id": "ChIJI2yhZBxZwokRaLg_A-8sqDA"
+  },
+  {
+    "name": "The Food Emporium",
+    "lat": 40.7598426,
+    "lon": -73.994374,
+    "address": "452 W 43rd St, New York",
+    "place_id": "ChIJGWK0cVJYwokRjrjYSgwPdMo"
+  },
+  {
+    "name": "Target",
+    "lat": 40.761352,
+    "lon": -73.9945552,
+    "address": "615 10th Ave, New York",
+    "place_id": "ChIJB-SQwP1ZwokRMMtya2Ls8v4"
+  },
+  {
+    "name": "Big Apple Meat Market",
+    "lat": 40.758285,
+    "lon": -73.99302999999999,
+    "address": "577 9th Ave, New York",
+    "place_id": "ChIJWRCJ7lJYwokRwb4OonN-uiI"
+  },
+  {
+    "name": "MORTON WILLIAMS SUPERMARKETS",
+    "lat": 40.7647437,
+    "lon": -73.97891659999999,
+    "address": "140 W 57th St, New York",
+    "place_id": "ChIJlTWmZvdYwokROyEKYwbPEwo"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7647791,
+    "lon": -73.9845042,
+    "address": "907 8th Ave, New York",
+    "place_id": "ChIJ-dW2jFdYwokRvlPWp_0GR28"
+  },
+  {
+    "name": "The Food Emporium",
+    "lat": 40.7617385,
+    "lon": -73.98619040000001,
+    "address": "810 8th Ave, New York",
+    "place_id": "ChIJuWO59FZYwokRDbvnB6y8iBg"
+  },
+  {
+    "name": "Westerly Natural Market",
+    "lat": 40.7650276,
+    "lon": -73.98444049999999,
+    "address": "911 8th Ave, New York",
+    "place_id": "ChIJn9A19FdYwokR_Cu7LVsGZtI"
+  },
+  {
+    "name": "Sunrise Mart \u65e5\u7cfb\u30b9\u30fc\u30d1\u30fc",
+    "lat": 40.752353,
+    "lon": -73.9807056,
+    "address": "12 E 41st St, New York",
+    "place_id": "ChIJTya7VwBZwokRlRw-d-i0Orc"
+  },
+  {
+    "name": "Superior Gourmet Marketplace \u0665\u0665\u0665",
+    "lat": 40.7587592,
+    "lon": -73.9964535,
+    "address": "555 10th Ave, New York",
+    "place_id": "ChIJEyBGDU1YwokRFgRfsULvEmM"
+  },
+  {
+    "name": "Eden Gourmet Marketplace",
+    "lat": 40.7378806,
+    "lon": -73.983499,
+    "address": "275 3rd Ave, New York",
+    "place_id": "ChIJ8RhNw2hZwokRXENl8HCg2T4"
+  },
+  {
+    "name": "H Mart",
+    "lat": 40.74778149999999,
+    "lon": -73.9874038,
+    "address": "38 W 32nd St 2nd floor, New York",
+    "place_id": "ChIJm-KG5KhZwokRzWBK81hRNh0"
+  },
+  {
+    "name": "Ernest Klein & Co's Gourmet Food",
+    "lat": 40.7632036,
+    "lon": -73.9777658,
+    "address": "1366 6th Ave, New York",
+    "place_id": "ChIJXx687flYwokR2WalPJD48Zs"
+  },
+  {
+    "name": "Target Grocery",
+    "lat": 40.7568781,
+    "lon": -73.9884067,
+    "address": "237 W 42nd St, New York",
+    "place_id": "ChIJqaX8GIpZwokR3B9WsKvBSxw"
+  },
+  {
+    "name": "Dainobu",
+    "lat": 40.7363373,
+    "lon": -73.9973619,
+    "address": "498 6th Ave, New York",
+    "place_id": "ChIJu8RwyZdZwokRTGhEs9E-hdY"
+  },
+  {
+    "name": "Gracefully",
+    "lat": 40.7364766,
+    "lon": -73.97822819999999,
+    "address": "400 E 23rd St, New York",
+    "place_id": "ChIJC58TbgtZwokR5TctebudVGs"
+  },
+  {
+    "name": "Amish Market",
+    "lat": 40.7632678,
+    "lon": -73.9893428,
+    "address": "731 9th Ave, New York",
+    "place_id": "ChIJpysMKVFYwokRm1kPPjW3JHk"
+  },
+  {
+    "name": "Fushimi Market",
+    "lat": 40.7467933,
+    "lon": -73.9897624,
+    "address": "838 6th Ave, New York",
+    "place_id": "ChIJUaV1dwBZwokRROpWPmQ0nB0"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7595913,
+    "lon": -73.9663198,
+    "address": "226 E 57th St, New York",
+    "place_id": "ChIJvYILMORYwokRywGbSMh9b_c"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7375525,
+    "lon": -73.9737789,
+    "address": "25 Waterside Plaza, New York",
+    "place_id": "ChIJl0rtoARZwokRP1qORrPYYxQ"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7486146,
+    "lon": -73.9728228,
+    "address": "748 2nd Ave, New York",
+    "place_id": "ChIJl0rtoARZwokR_gup7UNdhTY"
+  },
+  {
+    "name": "Morton Williams Supermarkets",
+    "lat": 40.7644174,
+    "lon": -73.9648965,
+    "address": "1066 3rd Ave, New York",
+    "place_id": "ChIJQyEH0ehYwokRdBbXzsOGYmQ"
+  },
+  {
+    "name": "Morton Williams Supermarkets",
+    "lat": 40.7578961,
+    "lon": -73.9635089,
+    "address": "1031 1st Ave, New York",
+    "place_id": "ChIJ0dtMz-ZYwokRo0RsQAlsIyw"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7597093,
+    "lon": -73.9615282,
+    "address": "405 E 59th St, New York",
+    "place_id": "ChIJVaVhLKxZwokRS0yT-WWNnuA"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7634759,
+    "lon": -73.95888289999999,
+    "address": "1208 1st Ave, New York",
+    "place_id": "ChIJdS_1Q-hYwokRvwfGxNtPfEQ"
+  },
+  {
+    "name": "D'Agostino at 53rd Street",
+    "lat": 40.7558262,
+    "lon": -73.9643589,
+    "address": "966 1st Ave, New York",
+    "place_id": "ChIJNZWUaOFYwokRPeRdkNZz7tI"
+  },
+  {
+    "name": "Foodtown of Roosevelt Island",
+    "lat": 40.7647025,
+    "lon": -73.9469861,
+    "address": "686 Main St, New York",
+    "place_id": "ChIJI-L0Wu9ZwokRUkENYOZKPYM"
+  },
+  {
+    "name": "809 Lexington Grocery Store",
+    "lat": 40.7642715,
+    "lon": -73.9665354,
+    "address": "809 Lexington Ave #2FL, New York",
+    "place_id": "ChIJnwyAPO9YwokROlnP4BujIt4"
+  },
+  {
+    "name": "Gristede's",
+    "lat": 40.764709,
+    "lon": -73.946981,
+    "address": "686 Main St #0021, New York",
+    "place_id": "ChIJgan9aMVYwokRxX8MYAwRV6Y"
+  },
+  {
+    "name": "Delico 765",
+    "lat": 40.7491644,
+    "lon": -73.9729425,
+    "address": "765 2nd Ave, New York",
+    "place_id": "ChIJNXB8ZwNZwokRnjjJR6Me620"
+  },
+  {
+    "name": "Urban Essentials Market",
+    "lat": 40.7568448,
+    "lon": -73.9714917,
+    "address": "569 Lexington Ave On 51th street Between 3rd ave, Lexington Ave, New York",
+    "place_id": "ChIJ1Rk-8jdZwokRcDMGlKuajYc"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.7613159,
+    "lon": -73.93104079999999,
+    "address": "24-18 34th Ave, Long Island City",
+    "place_id": "ChIJv3uB6zNfwokRygB1lZ9r_eA"
+  },
+  {
+    "name": "Trade Fair Supermarket",
+    "lat": 40.7636093,
+    "lon": -73.92850330000002,
+    "address": "23-55 Broadway, Astoria",
+    "place_id": "ChIJk_3P6jZfwokRu-x8xl2oUT4"
+  },
+  {
+    "name": "Trade Fair Supermarket",
+    "lat": 40.7590992,
+    "lon": -73.93558139999999,
+    "address": "22-20 36th Ave, Long Island City",
+    "place_id": "ChIJQXmrtjJfwokRx_e770_nqLE"
+  },
+  {
+    "name": "The Food Emporium",
+    "lat": 40.7625302,
+    "lon": -73.9268211,
+    "address": "29-10, 29-10 Broadway, Astoria",
+    "place_id": "ChIJU9GVPxJfwokRyA4xgIFf6kg"
+  },
+  {
+    "name": "City Fresh Market",
+    "lat": 40.7654607,
+    "lon": -73.9305071,
+    "address": "21-15 Broadway, Astoria",
+    "place_id": "ChIJg9chLDRfwokRJmxSMq7PSvc"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.7567847,
+    "lon": -73.92990759999999,
+    "address": "30-13 36th Ave, Astoria",
+    "place_id": "ChIJBdtYRj9fwokRnKm2hi9-sZ0"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.7580769,
+    "lon": -73.9244866,
+    "address": "34-12 34th Ave, Astoria",
+    "place_id": "ChIJiRBWaTBfwokRLfCjnC9tChE"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.7563165,
+    "lon": -73.92136339999999,
+    "address": "34-14 Steinway St, Astoria",
+    "place_id": "ChIJqfDw7whfwokRiaQxSf_DMbI"
+  },
+  {
+    "name": "SuperFresh Sunnyside",
+    "lat": 40.7406501,
+    "lon": -73.9232147,
+    "address": "41-25 Greenpoint Ave, Sunnyside",
+    "place_id": "ChIJC3mve61fwokRveiFudPy5w8"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.7650213,
+    "lon": -73.9132925,
+    "address": "40-12 28th Ave, Astoria",
+    "place_id": "ChIJNx5SD0BfwokR5JLwNXWxlI8"
+  },
+  {
+    "name": "Greenbay Marketplace",
+    "lat": 40.761306,
+    "lon": -73.9244325,
+    "address": "32-06 Broadway, Astoria",
+    "place_id": "ChIJ13ScqjBfwokRLjzMPyro04Q"
+  },
+  {
+    "name": "Food Dynasty",
+    "lat": 40.7493188,
+    "lon": -73.89048319999999,
+    "address": "75-07 37th Ave, Jackson Heights",
+    "place_id": "ChIJO8CmCgdfwokRIcpMEFxSqeQ"
+  },
+  {
+    "name": "Ferreira Foodtown of Jackson Heights - Supermarket",
+    "lat": 40.7490882,
+    "lon": -73.88956619999999,
+    "address": "76-10 37th Ave, Jackson Heights",
+    "place_id": "ChIJc0xbeAdfwokRlpDMeyvLCUo"
+  },
+  {
+    "name": "Sunny Grocery (Turkish Grocery)",
+    "lat": 40.7448056,
+    "lon": -73.91850339999999,
+    "address": "45-26 43rd Ave, Sunnyside",
+    "place_id": "ChIJtz6V7NthwokRzrit3Es7Gng"
+  },
+  {
+    "name": "Key Food Supermarket",
+    "lat": 40.7629178,
+    "lon": -73.912634,
+    "address": "42-15 30th Ave., Astoria",
+    "place_id": "ChIJAdVZ1j9fwokRxBpQVv9SQaE"
+  },
+  {
+    "name": "Titash Supermarket",
+    "lat": 40.7506346,
+    "lon": -73.89469969999999,
+    "address": "71-06 35th Ave, Jackson Heights",
+    "place_id": "ChIJ7zmldwZfwokRfeFNA-mv5R4"
+  },
+  {
+    "name": "Patel Brothers",
+    "lat": 40.7480674,
+    "lon": -73.8915523,
+    "address": "37-27 74th St., Jackson Heights",
+    "place_id": "ChIJw3FOIgdfwokR2XxRm53-gl4"
+  },
+  {
+    "name": "Trade Fair Supermarket",
+    "lat": 40.760443,
+    "lon": -73.90706899999999,
+    "address": "49-11 30th Ave., Woodside",
+    "place_id": "ChIJS8utchRfwokRh0E8EwM3Fb8"
+  },
+  {
+    "name": "Apna Bazar Farmers Market",
+    "lat": 40.748734,
+    "lon": -73.89284669999999,
+    "address": "72-30 37th Ave, Jackson Heights",
+    "place_id": "ChIJW2c2-aRfwokRqA6PBZ_vV0g"
+  },
+  {
+    "name": "GREEN TARA SUPERMARKET",
+    "lat": 40.7411643,
+    "lon": -73.9173581,
+    "address": "45-62 48th St, Woodside",
+    "place_id": "ChIJVyZLod5ewokRKPqcYJaD3V8"
+  },
+  {
+    "name": "City Fresh Market",
+    "lat": 40.7727328,
+    "lon": -74.0296123,
+    "address": "518 32nd St, Union City",
+    "place_id": "ChIJOTYJjCdYwokRRhLI8K34JAQ"
+  },
+  {
+    "name": "ALDI",
+    "lat": 40.7734549,
+    "lon": -74.0369027,
+    "address": "2819 John F. Kennedy Blvd, North Bergen",
+    "place_id": "ChIJ4eawRY9XwokRHue0v4S1CDg"
+  },
+  {
+    "name": "Lidl",
+    "lat": 40.77401,
+    "lon": -74.02098,
+    "address": "4100 Park Ave, Weehawken Township",
+    "place_id": "ChIJXzZtWKtZwokRcFYiJagFUcY"
+  },
+  {
+    "name": "Los Hermanos Supermarket",
+    "lat": 40.7690488,
+    "lon": -74.0314636,
+    "address": "2606 Bergenline Ave, Union City",
+    "place_id": "ChIJsZfDDIdXwokR_FCwHUmSOdM"
+  },
+  {
+    "name": "Tropical Supermarket",
+    "lat": 40.7685438,
+    "lon": -74.0344264,
+    "address": "2400 Central Ave, Union City",
+    "place_id": "ChIJT_k6wIZXwokRlXcarcupSdY"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.7726152,
+    "lon": -74.0282273,
+    "address": "426 33rd St, Union City",
+    "place_id": "ChIJNdYXwSdYwokR3JgrMPvwIX8"
+  },
+  {
+    "name": "Brooklyn Fare",
+    "lat": 40.7736356,
+    "lon": -73.9892215,
+    "address": "75 W End Ave, New York",
+    "place_id": "ChIJW66A8O1ZwokR2UErZnUbZNY"
+  },
+  {
+    "name": "Morton Williams Supermarkets",
+    "lat": 40.7721229,
+    "lon": -73.9904864,
+    "address": "15 W End Ave, New York",
+    "place_id": "ChIJW0IsvnFZwokRvc_5nuewZBE"
+  },
+  {
+    "name": "D'Agostino at 54th Street",
+    "lat": 40.7675399,
+    "lon": -73.9900894,
+    "address": "815 10th Ave, New York",
+    "place_id": "ChIJyxroO1pYwokRu4j-wuqnzvM"
+  },
+  {
+    "name": "MORTON WILLIAMS SUPERMARKETS",
+    "lat": 40.7689628,
+    "lon": -73.9852025,
+    "address": "917 9th Ave, New York",
+    "place_id": "ChIJabm8wlhYwokRGwnWxb9HbtY"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7685526,
+    "lon": -73.9831866,
+    "address": "10 Columbus Cir Ste Sc101, New York",
+    "place_id": "ChIJvaMqIvZYwokR9tb1ok27g8U"
+  },
+  {
+    "name": "The Market @ Mercedes House",
+    "lat": 40.7677253,
+    "lon": -73.9915642,
+    "address": "550 W 54th St, New York",
+    "place_id": "ChIJ9YHLXlpYwokRCQBAzRQI72w"
+  },
+  {
+    "name": "Hudson Market",
+    "lat": 40.7707775,
+    "lon": -73.99157919999999,
+    "address": "601 W 57th St, New York",
+    "place_id": "ChIJrWr1gVtYwokRWrbM_VJ0nCc"
+  },
+  {
+    "name": "MORTON WILLIAMS SUPERMARKETS",
+    "lat": 40.7673667,
+    "lon": -73.9565889,
+    "address": "1331 1st Ave, New York",
+    "place_id": "ChIJg4OMoMFYwokRTxs3OH9NQGg"
+  },
+  {
+    "name": "MORTON WILLIAMS SUPERMARKETS",
+    "lat": 40.7698218,
+    "lon": -73.9603509,
+    "address": "1251 3rd Ave, New York",
+    "place_id": "ChIJ54xCElhZwokRUFGlkOugKXw"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.773319,
+    "lon": -73.95772,
+    "address": "1365 3rd Ave, New York",
+    "place_id": "ChIJoeEGt79YwokRw6mNe7339kw"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7708647,
+    "lon": -73.9565746,
+    "address": "1446 2nd Ave, New York",
+    "place_id": "ChIJEfwHf8BYwokRzpIRFgb_rxk"
+  },
+  {
+    "name": "D'Agostino",
+    "lat": 40.7728311,
+    "lon": -73.96064609999999,
+    "address": "1074 Lexington Ave, New York",
+    "place_id": "ChIJgbgZs71YwokRCRK9j6aexrE"
+  },
+  {
+    "name": "Grace's Marketplace",
+    "lat": 40.7663579,
+    "lon": -73.960295,
+    "address": "1299 2nd Ave, New York",
+    "place_id": "ChIJD-XpiupYwokRf4iMusF6h3g"
+  },
+  {
+    "name": "Morton Williams Supermarket",
+    "lat": 40.7738546,
+    "lon": -73.95181579999999,
+    "address": "1565 1st Ave, New York",
+    "place_id": "ChIJYXC-FblYwokR9xWuqc58d7g"
+  },
+  {
+    "name": "Horton\u2019s Market!",
+    "lat": 40.76760830000001,
+    "lon": -73.93006009999999,
+    "address": "14-53 31st Ave, Astoria",
+    "place_id": "ChIJtQs4Rd5fwokRVap67e2VfS0"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7674226,
+    "lon": -73.96201549999999,
+    "address": "1175 3rd Ave, New York",
+    "place_id": "ChIJC7lnBiNZwokR19TbYvqyS7U"
+  },
+  {
+    "name": "D'Agostino at 80th & York",
+    "lat": 40.7719752,
+    "lon": -73.9502432,
+    "address": "1507 York Ave, New York",
+    "place_id": "ChIJRfeDWbhYwokRweCvpaeJl-I"
+  },
+  {
+    "name": "Target Grocery",
+    "lat": 40.768116,
+    "lon": -73.96144919999999,
+    "address": "1201 3rd Ave, New York",
+    "place_id": "ChIJMyAWJNlZwokRHssk02zlLwo"
+  },
+  {
+    "name": "Euro Market",
+    "lat": 40.7658839,
+    "lon": -73.9224625,
+    "address": "30-42 31st St, Astoria",
+    "place_id": "ChIJP1qbczhfwokRDvLns9eM3p4"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.7714642,
+    "lon": -73.92512239999999,
+    "address": "21-30 Newtown Ave, Astoria",
+    "place_id": "ChIJlS7aSU9fwokRJ5_pawv6qCw"
+  },
+  {
+    "name": "Key Food Urban Marketplace",
+    "lat": 40.766613,
+    "lon": -73.9198074,
+    "address": "32-21 Newtown Ave, Astoria",
+    "place_id": "ChIJg9pXXUdfwokR6hWE_4ucPnc"
+  },
+  {
+    "name": "Astoria Marketplace",
+    "lat": 40.77181170000001,
+    "lon": -73.9151043,
+    "address": "31-18 24th Ave, Astoria",
+    "place_id": "ChIJ29F7uUVfwokRj_3ME81q1nk"
+  },
+  {
+    "name": "Trade Fair Supermarket",
+    "lat": 40.7738933,
+    "lon": -73.9073198,
+    "address": "37-11 Ditmars Blvd, Astoria",
+    "place_id": "ChIJec7_qGhfwokRDEQdaGVFXnM"
+  },
+  {
+    "name": "Trade Fair",
+    "lat": 40.767011,
+    "lon": -73.9219349,
+    "address": "30-08 30th Ave., Astoria",
+    "place_id": "ChIJCY6bmkdfwokRZa2TNYLMeP8"
+  },
+  {
+    "name": "Farm Country of Astoria",
+    "lat": 40.7619368,
+    "lon": -73.91805579999999,
+    "address": "37-15 31st Ave, Long Island City",
+    "place_id": "ChIJUe3tPS5fwokRXt_qYnn_pDM"
+  },
+  {
+    "name": "Ditmars Blvd Supermarket",
+    "lat": 40.769861,
+    "lon": -73.9022767,
+    "address": "46-14 Ditmars Blvd, Astoria",
+    "place_id": "ChIJP-eZQG5fwokR157sjxsUzz4"
+  },
+  {
+    "name": "Berry Fresh Farms Supermarket",
+    "lat": 40.7701486,
+    "lon": -73.90456449999999,
+    "address": "43-26 Ditmars Blvd, Astoria",
+    "place_id": "ChIJ57Qzu15fwokRSo5uIUURIJM"
+  },
+  {
+    "name": "21st Street Marketplace",
+    "lat": 40.7706996,
+    "lon": -73.92745289999999,
+    "address": "28-16 21st St, Astoria",
+    "place_id": "ChIJd8-BtVFfwokRzdX9wngiUM8"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.7457695,
+    "lon": -73.8987148,
+    "address": "39-07 65th Pl, Woodside",
+    "place_id": "ChIJQZfgEwNfwokRKj0hFzAezpI"
+  },
+  {
+    "name": "Extra Supermarket",
+    "lat": 40.7849758,
+    "lon": -74.01656249999999,
+    "address": "5505 Palisade Ave, West New York",
+    "place_id": "ChIJQRXGyBBYwokRhGVkp80YN1w"
+  },
+  {
+    "name": "ACME Markets",
+    "lat": 40.782138,
+    "lon": -74.006992,
+    "address": "19-21 Ave at Port Imperial, West New York",
+    "place_id": "ChIJsQ1MXWtYwokRpwnUrlXJa-U"
+  },
+  {
+    "name": "Super Supermarket",
+    "lat": 40.7834047,
+    "lon": -74.0175788,
+    "address": "5208 Palisade Ave, West New York",
+    "place_id": "ChIJC6kNaBdYwokR8r2fI9tJZP4"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.7852082,
+    "lon": -74.0130278,
+    "address": "57-01 Broadway, West New York",
+    "place_id": "ChIJBf_VZxFYwokRU3HL2q3sB0I"
+  },
+  {
+    "name": "ShopRite of Columbia Park",
+    "lat": 40.7766117,
+    "lon": -74.0350644,
+    "address": "3147 John F. Kennedy Blvd, North Bergen",
+    "place_id": "ChIJu30bCIlXwokRpZXLBo57lZI"
+  },
+  {
+    "name": "La Roca Supermarket",
+    "lat": 40.7791154,
+    "lon": -74.02373039999999,
+    "address": "4416 Bergenline Ave, Union City",
+    "place_id": "ChIJDYvRIyJYwokRd1QohBF4NoA"
+  },
+  {
+    "name": "Jubilee Marketplace",
+    "lat": 40.7782819,
+    "lon": -73.98774720000002,
+    "address": "180 Riverside Blvd, New York",
+    "place_id": "ChIJBbP6LmFYwokRqzvsg-sgFPc"
+  },
+  {
+    "name": "Fairway Market of 74th Street",
+    "lat": 40.7807653,
+    "lon": -73.9816666,
+    "address": "2131 Broadway, New York",
+    "place_id": "ChIJQ75KlYlYwokRs7U2ntd8bOU"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.77856389999999,
+    "lon": -73.98231419999999,
+    "address": "2073 Broadway, New York",
+    "place_id": "ChIJ5U8xEopYwokRjV6TuL4I9Ac"
+  },
+  {
+    "name": "Pioneer Supermarket",
+    "lat": 40.7784503,
+    "lon": -73.97783,
+    "address": "289 Columbus Ave, New York",
+    "place_id": "ChIJ8cMB8ItYwokRdFz2-L6gi8Y"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7855344,
+    "lon": -73.973109,
+    "address": "504 Columbus Ave, New York",
+    "place_id": "ChIJsewAG4VYwokRC7rbYSpmUpE"
+  },
+  {
+    "name": "Morton Williams Supermarkets",
+    "lat": 40.781661,
+    "lon": -73.9580093,
+    "address": "1211 Madison Ave, New York",
+    "place_id": "ChIJSxyuyaJYwokRnrldro_G1Ps"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.7819707,
+    "lon": -73.94898669999999,
+    "address": "1769 2nd Ave, New York",
+    "place_id": "ChIJpTrUcKVYwokRAWFvay1gEvs"
+  },
+  {
+    "name": "Fairway Market of 86th Street",
+    "lat": 40.7780363,
+    "lon": -73.952674,
+    "address": "240 East 86th St, New York",
+    "place_id": "ChIJQ75KlYlYwokRN76w58GDi00"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.779099,
+    "lon": -73.94800330000001,
+    "address": "1721 1st Ave, New York",
+    "place_id": "ChIJ6Qr7pbpYwokRqQzVVF7VNhk"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7796707,
+    "lon": -73.9529499,
+    "address": "1551 3rd Ave, New York",
+    "place_id": "ChIJ155rWbtYwokRLX7PL1o55Vs"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7762619,
+    "lon": -73.94649849999999,
+    "address": "1644 York Ave, New York",
+    "place_id": "ChIJoeEGt79YwokRhpMIg4Gcjmc"
+  },
+  {
+    "name": "Brooklyn Harvest Market Hallett's Point",
+    "lat": 40.7763729,
+    "lon": -73.934887,
+    "address": "26-14 2nd St, Astoria",
+    "place_id": "ChIJk4GID6xfwokRpKS7-ssITyU"
+  },
+  {
+    "name": "Lidl",
+    "lat": 40.7789329,
+    "lon": -73.9016702,
+    "address": "19-30 37th St, Astoria",
+    "place_id": "ChIJoZVAYgBfwokRQ0_6vkNnIQk"
+  },
+  {
+    "name": "Cherry Valley Farm Supermarket",
+    "lat": 40.782369,
+    "lon": -73.915126,
+    "address": "20-16 21st Ave, Astoria",
+    "place_id": "ChIJl1ZcU15fwokRzMzIjMycxgA"
+  },
+  {
+    "name": "Bonoful Supermarket",
+    "lat": 40.7572889,
+    "lon": -73.93098069999999,
+    "address": "29-11 36th Ave, Astoria",
+    "place_id": "ChIJsTgz9y1fwokRLZHT2JsdsCs"
+  },
+  {
+    "name": "Family Market",
+    "lat": 40.7625725,
+    "lon": -73.9263572,
+    "address": "29-15 Broadway, Astoria",
+    "place_id": "ChIJJTTBOjdfwokRXVAMWn8urfA"
+  },
+  {
+    "name": "Greenbay Organic Foods",
+    "lat": 40.7665964,
+    "lon": -73.9210464,
+    "address": "31-10 30th Ave., Astoria",
+    "place_id": "ChIJGSEYeUdfwokR0utpGtrS5cY"
+  },
+  {
+    "name": "Mediterranean Foods II",
+    "lat": 40.77338,
+    "lon": -73.91104299999999,
+    "address": "22-78 35th St, Astoria",
+    "place_id": "ChIJAZYmvEJfwokRwsOBXg6IYBQ"
+  },
+  {
+    "name": "Rio Market Inc",
+    "lat": 40.7560256,
+    "lon": -73.9282638,
+    "address": "32-15 36th Ave, Astoria",
+    "place_id": "ChIJk_srPy5fwokRc4JZPOT0EDM"
+  },
+  {
+    "name": "Mediterranean Foods",
+    "lat": 40.76548469999999,
+    "lon": -73.9193804,
+    "address": "30-12 34th St, Astoria",
+    "place_id": "ChIJ78AhpDhfwokRIrKtO6da-jM"
+  },
+  {
+    "name": "Watany Food Market",
+    "lat": 40.7661924,
+    "lon": -73.91332659999999,
+    "address": "25-78 Steinway St, Long Island City",
+    "place_id": "ChIJHZN4PUBfwokRYNgy1xm6-Xc"
+  },
+  {
+    "name": "La Placita Supermarket",
+    "lat": 40.7800514,
+    "lon": -74.0179434,
+    "address": "152 48th St, Union City",
+    "place_id": "ChIJXaJqWD1YwokR52mx4EKZ6oY"
+  },
+  {
+    "name": "Green Way Markets of West New York",
+    "lat": 40.7893847,
+    "lon": -74.0060373,
+    "address": "6411 Park Ave, West New York",
+    "place_id": "ChIJU0bEyXJYwokRVDCzk2DiAbs"
+  },
+  {
+    "name": "Latinos Supermarket",
+    "lat": 40.7910704,
+    "lon": -74.009252,
+    "address": "6418 Hudson Ave, West New York",
+    "place_id": "ChIJpyJ3_wxYwokRUgC-Psuo_nE"
+  },
+  {
+    "name": "Selectos Supermarket",
+    "lat": 40.7932824,
+    "lon": -74.0128296,
+    "address": "6508 Bergenline Ave, West New York",
+    "place_id": "ChIJZ44Gpg5YwokRdPm44lukc6U"
+  },
+  {
+    "name": "La Casa Supermarket",
+    "lat": 40.7906098,
+    "lon": -74.00445049999999,
+    "address": "6700 Park Ave, West New York",
+    "place_id": "ChIJtYoYG3NYwokRhf2SHF6gPSc"
+  },
+  {
+    "name": "El Rey Farmer's Market",
+    "lat": 40.7898928,
+    "lon": -74.01234459999999,
+    "address": "6124 Palisade Ave, West New York",
+    "place_id": "ChIJlY9_4Q1YwokRTHFCovdnSAI"
+  },
+  {
+    "name": "MetFresh",
+    "lat": 40.7952475,
+    "lon": -74.0113445,
+    "address": "6818 Bergenline Ave, Guttenberg",
+    "place_id": "ChIJvaVZxAtYwokRhvlg7kRzVkg"
+  },
+  {
+    "name": "Gourmet Garage of West 66th",
+    "lat": 40.77443969999999,
+    "lon": -73.98322710000001,
+    "address": "155 W 66th St, New York",
+    "place_id": "ChIJUbQxJAtZwokRxc-TGxiIsR4"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.7935939,
+    "lon": -73.97024449999999,
+    "address": "733 Amsterdam Ave, New York",
+    "place_id": "ChIJucAzxif2wokRCjzR46Fk3JE"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.7874953,
+    "lon": -73.9754212,
+    "address": "530 Amsterdam Ave, New York",
+    "place_id": "ChIJX-7Ja4RYwokRIZaFXJbh37w"
+  },
+  {
+    "name": "D'Agostino at 91st Street",
+    "lat": 40.789374,
+    "lon": -73.9697556,
+    "address": "633 Columbus Ave, New York",
+    "place_id": "ChIJQ6apwpxYwokR4NV1UcGbRSk"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.7939667,
+    "lon": -73.9671163,
+    "address": "808 Columbus Ave, New York",
+    "place_id": "ChIJ-6ZxFif2wokRaRaETTJc_9Q"
+  },
+  {
+    "name": "Associated Supermarket / Pizza Hut",
+    "lat": 40.7946087,
+    "lon": -73.9634706,
+    "address": "13 15 W 100th St, New York",
+    "place_id": "ChIJfXL5GyH2wokREZJGwUpnzjk"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.7908176,
+    "lon": -73.9693698,
+    "address": "670 Columbus Ave, New York",
+    "place_id": "ChIJ1_bNGJ1YwokR9OFA1FuxTJQ"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.785748,
+    "lon": -73.9511928,
+    "address": "1486 Lexington Ave, New York",
+    "place_id": "ChIJnbRCj6ZYwokRF-p7c9N612U"
+  },
+  {
+    "name": "Ideal Food Basket",
+    "lat": 40.7905519,
+    "lon": -73.94734869999999,
+    "address": "1635 Lexington Ave, New York",
+    "place_id": "ChIJxXfStgL2wokRoe6ItxdpmvU"
+  },
+  {
+    "name": "Associated Supermarket - Madison Avenue, New York",
+    "lat": 40.7940029,
+    "lon": -73.94969230000001,
+    "address": "1588 Madison Ave, New York",
+    "place_id": "ChIJgdwPVun3wokR1n3yinD63PE"
+  },
+  {
+    "name": "City Fresh Market",
+    "lat": 40.7911641,
+    "lon": -73.94308319999999,
+    "address": "235 E 106th St #4005, New York",
+    "place_id": "ChIJPVguNAL2wokRLboYsUE74Jo"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.79058879999999,
+    "lon": -73.9451783,
+    "address": "1891 3rd Ave, New York",
+    "place_id": "ChIJ8-66MNz1wokR3I0vInL7kGw"
+  },
+  {
+    "name": "Shop Fair of 110th Street",
+    "lat": 40.79432000000001,
+    "lon": -73.943834,
+    "address": "160 E 110th St, New York",
+    "place_id": "ChIJCZNccQT2wokRx9_P-Lq0jiA"
+  },
+  {
+    "name": "Cherry Valley Marketplace",
+    "lat": 40.7874647,
+    "lon": -73.9443082,
+    "address": "1968 2nd Ave, New York",
+    "place_id": "ChIJN9MCsalYwokR8ADWpO9TH3k"
+  },
+  {
+    "name": "ALDI",
+    "lat": 40.79516390000001,
+    "lon": -73.9314533,
+    "address": "517 E 117th St, New York",
+    "place_id": "ChIJL5fG5fz1wokRlAvvjIRpmCY"
+  },
+  {
+    "name": "Bergenline Supermarket",
+    "lat": 40.8033117,
+    "lon": -74.0056692,
+    "address": "8107 Bergenline Ave, North Bergen",
+    "place_id": "ChIJlekV5d33wokRKjSQb9avPDY"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7992073,
+    "lon": -73.96821609999999,
+    "address": "2704 Broadway, New York",
+    "place_id": "ChIJu3GdsiX2wokRudmQBbOBe4Q"
+  },
+  {
+    "name": "H Mart",
+    "lat": 40.8038844,
+    "lon": -73.9665046,
+    "address": "2828 Broadway, New York",
+    "place_id": "ChIJ24_bbTv2wokR1uvRfwmJLG0"
+  },
+  {
+    "name": "Central Markets",
+    "lat": 40.8008246,
+    "lon": -73.9593514,
+    "address": "300 W 110th St, New York",
+    "place_id": "ChIJYX8zqiL2wokRlvbqSyfohm0"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.7994444,
+    "lon": -73.9519871,
+    "address": "37 Malcolm X Blvd, New York",
+    "place_id": "ChIJg8fdcRr2wokR4WVcMs4tfkI"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.7983712,
+    "lon": -73.9462151,
+    "address": "1718 Madison Ave, New York",
+    "place_id": "ChIJRV5jyhH2wokRE6qG4-8z0_Q"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8037702,
+    "lon": -73.95431719999999,
+    "address": "238 W 116th St, New York",
+    "place_id": "ChIJVT8lagX2wokREcF1Mr0GN0c"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.8023197,
+    "lon": -73.949046,
+    "address": "136 Malcolm X Blvd, New York",
+    "place_id": "ChIJRV5jyhH2wokRuMhmzqHYtqc"
+  },
+  {
+    "name": "City Fresh Market",
+    "lat": 40.8009359,
+    "lon": -73.9380789,
+    "address": "2212 3rd Ave #3536, New York",
+    "place_id": "ChIJ88OvsQn2wokRGQDD9kx6Wek"
+  },
+  {
+    "name": "Gristedes",
+    "lat": 40.7816072,
+    "lon": -73.95387029999999,
+    "address": "1343 Lexington Ave, New York",
+    "place_id": "ChIJCX_eXqNYwokR6szaGZpwoNk"
+  },
+  {
+    "name": "Foodtown of East Harlem",
+    "lat": 40.8007475,
+    "lon": -73.9373741,
+    "address": "2211 3rd Ave, New York",
+    "place_id": "ChIJs8zFgEX3wokRLwZrHexf1EE"
+  },
+  {
+    "name": "City Fresh Market",
+    "lat": 40.7989304,
+    "lon": -73.9419356,
+    "address": "125 E 116th St, New York",
+    "place_id": "ChIJEefDrAj2wokRhYRYyXVD5gc"
+  },
+  {
+    "name": "Los Vecinos Meat Market & Supermarket",
+    "lat": 40.8019076,
+    "lon": -73.9642465,
+    "address": "987 Amsterdam Ave, New York",
+    "place_id": "ChIJJwanszz2wokR_lAk5WM0pCQ"
+  },
+  {
+    "name": "Barzini's",
+    "lat": 40.791372,
+    "lon": -73.9745046,
+    "address": "2451 Broadway, New York",
+    "place_id": "ChIJja1RVoJYwokR1pkbQ_Z7cH4"
+  },
+  {
+    "name": "Key Food Upper West Side",
+    "lat": 40.7899586,
+    "lon": -73.9756858,
+    "address": "2401 Broadway, New York",
+    "place_id": "ChIJBS_7sINZwokRqlDs93ILOns"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.7876037,
+    "lon": -73.9417662,
+    "address": "1999 1st Ave, New York",
+    "place_id": "ChIJbzzcoWdZwokRMdALOc_1-Xc"
+  },
+  {
+    "name": "Shop Fair of 116th Street",
+    "lat": 40.7980373,
+    "lon": -73.9407676,
+    "address": "178 E 116th St, New York",
+    "place_id": "ChIJJ_xmGQb2wokRTy0vMyDx9q4"
+  },
+  {
+    "name": "D'Agostino",
+    "lat": 40.7776947,
+    "lon": -73.95671899999999,
+    "address": "1233 Lexington Ave, New York",
+    "place_id": "ChIJkVMRs71YwokRO26lMow5s00"
+  },
+  {
+    "name": "NYC Fresh Market",
+    "lat": 40.796423,
+    "lon": -73.9476263,
+    "address": "1660 Madison Ave, New York",
+    "place_id": "ChIJ2zmi0gT2wokRnFKB8Dp1hK4"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.7967446,
+    "lon": -73.9476212,
+    "address": "1660 Madison Ave, New York",
+    "place_id": "ChIJTT3kWUv3wokRfnDzSAxtzeE"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.798247,
+    "lon": -73.93358239999999,
+    "address": "2330 1st Ave, New York",
+    "place_id": "ChIJt5iH2eL1wokR8QdYCh6PUGA"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.80374219999999,
+    "lon": -73.9354922,
+    "address": "201 E 125th St, New York",
+    "place_id": "ChIJEcKVt2P1wokRscQqSY0M4js"
+  },
+  {
+    "name": "FreshDirect",
+    "lat": 40.8013096,
+    "lon": -73.9192702,
+    "address": "2 St Ann's Ave, Bronx",
+    "place_id": "ChIJcceGQ-n1wokRZIqzwhfmoZU"
+  },
+  {
+    "name": "ALDI",
+    "lat": 40.8076651,
+    "lon": -74.0174457,
+    "address": "8101 Tonnelle Ave, North Bergen",
+    "place_id": "ChIJt4SmqOb3wokR41aJIGzWqoA"
+  },
+  {
+    "name": "Las Palmas Supermarket",
+    "lat": 40.7911294,
+    "lon": -74.01493289999999,
+    "address": "6155 Bergenline Ave, West New York",
+    "place_id": "ChIJ5VOJRsBZwokRKLC2zGxmaTw"
+  },
+  {
+    "name": "Mercado Urbano",
+    "lat": 40.7914555,
+    "lon": -74.0142256,
+    "address": "6210 Bergenline Ave, West New York",
+    "place_id": "ChIJ640e2MFZwokRzAOJGyHVpUg"
+  },
+  {
+    "name": "New Deli World Grocery Store",
+    "lat": 40.7937774,
+    "lon": -74.0052602,
+    "address": "7004 Broadway, Guttenberg",
+    "place_id": "ChIJQ8ra7mNZwokRAJoD2wnB1aw"
+  },
+  {
+    "name": "Benny's Liquors & Supermarket",
+    "lat": 40.7926295,
+    "lon": -74.00306590000001,
+    "address": "7000 Park Ave, Guttenberg",
+    "place_id": "ChIJ62iNeHRYwokREtbWJylaIo8"
+  },
+  {
+    "name": "FoodMex Supermarket",
+    "lat": 40.7854791,
+    "lon": -74.01855540000001,
+    "address": "5500 Bergenline Ave, West New York",
+    "place_id": "ChIJj1MWUylZwokRJDrysUEgbJo"
+  },
+  {
+    "name": "KEA GROCERY & DELI",
+    "lat": 40.7870666,
+    "lon": -74.0076187,
+    "address": "6108 Park Ave, West New York",
+    "place_id": "ChIJb0WDuBJYwokRq3XJ1iMGPJ8"
+  },
+  {
+    "name": "stop&buy supermarket",
+    "lat": 40.7890396,
+    "lon": -74.0180196,
+    "address": "5901 Madison St, West New York",
+    "place_id": "ChIJdSdb-n5ZwokRMrcuuWyNo34"
+  },
+  {
+    "name": "ACME Markets",
+    "lat": 40.8115068,
+    "lon": -73.98411279999999,
+    "address": "481 River Rd, Edgewater",
+    "place_id": "ChIJ17n6vMr3wokRJGWBEM03nZ4"
+  },
+  {
+    "name": "C-Town Fresh Market",
+    "lat": 40.814658,
+    "lon": -73.95779499999999,
+    "address": "560 W 125th St, New York",
+    "place_id": "ChIJa34jOWr2wokRHifnNJZfc_E"
+  },
+  {
+    "name": "Foodtown of Frederick Douglas Blvd",
+    "lat": 40.8146646,
+    "lon": -73.948126,
+    "address": "2463 Frederick Douglass Boulevard at, W 132nd St, New York",
+    "place_id": "ChIJQRo0BG72wokRSHybc3U3QzQ"
+  },
+  {
+    "name": "Harlem Fresh Market by Key Food",
+    "lat": 40.8120691,
+    "lon": -73.95490749999999,
+    "address": "421 W 125th St, New York",
+    "place_id": "ChIJ7QUAcmv2wokRyL8ic6V6B6w"
+  },
+  {
+    "name": "LINCOLN MARKET",
+    "lat": 40.8080958,
+    "lon": -73.9532387,
+    "address": "233 St Nicholas Ave, New York",
+    "place_id": "ChIJJY12-tD3wokRzPPUXR_8Wtw"
+  },
+  {
+    "name": "Pioneer Supermarkets of Harlem",
+    "lat": 40.8104714,
+    "lon": -73.9431949,
+    "address": "380 Malcolm X Blvd, New York",
+    "place_id": "ChIJWeXHbHP2wokRpjinxzc2SiI"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.8132244,
+    "lon": -73.93912929999999,
+    "address": "24 W 135th St, New York",
+    "place_id": "ChIJHQ3ogXb2wokRVFPEIw4AT8w"
+  },
+  {
+    "name": "Food Dynasty Supermarkets",
+    "lat": 40.8124055,
+    "lon": -73.9417894,
+    "address": "448 Malcolm X Blvd, New York",
+    "place_id": "ChIJJb_tpEj3wokR_i0RKzBbKoY"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8124289,
+    "lon": -73.9497579,
+    "address": "2395 Frederick Douglass Blvd, New York",
+    "place_id": "ChIJ7SLR_Ev3wokR6_PWlFUXaYE"
+  },
+  {
+    "name": "Lidl",
+    "lat": 40.80611,
+    "lon": -73.95424,
+    "address": "2187 Frederick Douglass Blvd, New York",
+    "place_id": "ChIJx_bQ5wL3wokR8brRhF1O9VU"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.8076461,
+    "lon": -73.9461771,
+    "address": "100 W 125th St, New York",
+    "place_id": "ChIJiVmnFQ32wokReCy0KguVOpw"
+  },
+  {
+    "name": "Morton Williams Supermarkets",
+    "lat": 40.8076252,
+    "lon": -73.9645226,
+    "address": "2941 Broadway, New York",
+    "place_id": "ChIJx5-q0D72wokR-98xbWUpdMY"
+  },
+  {
+    "name": "Shop Fair Supermarkets",
+    "lat": 40.8096016,
+    "lon": -73.9482664,
+    "address": "2110 Adam Clayton Powell Jr Blvd, New York",
+    "place_id": "ChIJVaQ-EVD3wokRfw-TP-PKFYs"
+  },
+  {
+    "name": "Western Beef Supermarket",
+    "lat": 40.8127256,
+    "lon": -73.926365,
+    "address": "301 Morris Ave, Bronx",
+    "place_id": "ChIJsaT1Edv1wokRafk7Q_xeJbM"
+  },
+  {
+    "name": "Borinquen Supermarket",
+    "lat": 40.8120848,
+    "lon": -73.9164055,
+    "address": "436 Brook Ave, Bronx",
+    "place_id": "ChIJU8sF9sb1wokR0Mes6hfucSk"
+  },
+  {
+    "name": "Pioneer Supermarkets of Willis",
+    "lat": 40.8092611,
+    "lon": -73.92257099999999,
+    "address": "250 Willis Ave, Bronx",
+    "place_id": "ChIJPRhKFMP1wokRn8vhnFSfGfU"
+  },
+  {
+    "name": "Pioneer Supermarkets of St Ann's",
+    "lat": 40.8071787,
+    "lon": -73.9170737,
+    "address": "256 St Ann's Ave, Bronx",
+    "place_id": "ChIJ70ypnsH1wokR2XwiGa3cdGQ"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8144417,
+    "lon": -73.92136909999999,
+    "address": "2733 Third Ave, Bronx",
+    "place_id": "ChIJFZyFn8X1wokR3b-x3HRD3YY"
+  },
+  {
+    "name": "Shop Fair of Mott Haven",
+    "lat": 40.8069761,
+    "lon": -73.91932969999999,
+    "address": "228 Brook Ave, Bronx",
+    "place_id": "ChIJfT4gmpr1wokRw0EgoH2wS6A"
+  },
+  {
+    "name": "Associated Fresh of 132nd St",
+    "lat": 40.8131577,
+    "lon": -73.94496199999999,
+    "address": "2239 Adam Clayton Powell Jr Blvd, New York",
+    "place_id": "ChIJmyXvhLH3wokRpVeznS5KMGc"
+  },
+  {
+    "name": "Cherry Valley Marketplace",
+    "lat": 40.7961783,
+    "lon": -73.9376616,
+    "address": "309 E 115th St #2210, New York",
+    "place_id": "ChIJRQA5vQf2wokRRL5V9FHqN7Q"
+  },
+  {
+    "name": "Express Deli Corp",
+    "lat": 40.8105567,
+    "lon": -73.9437409,
+    "address": "393 Malcolm X Blvd, New York",
+    "place_id": "ChIJBegiC3P2wokRgMbKgnEv-E8"
+  },
+  {
+    "name": "SuperFresh South Bronx",
+    "lat": 40.8152562,
+    "lon": -73.9153032,
+    "address": "459 E 149th St, Bronx",
+    "place_id": "ChIJuboiYsj1wokRJZPGxuhdxKY"
+  },
+  {
+    "name": "Met Foodmarkets of Jackson Ave",
+    "lat": 40.81561230000001,
+    "lon": -73.90850499999999,
+    "address": "649 Jackson Ave, Bronx",
+    "place_id": "ChIJ1cWcGbf1wokRREupEuxPRSs"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8155029,
+    "lon": -73.88658540000002,
+    "address": "724 Hunts Point Ave, Bronx",
+    "place_id": "ChIJtZ49LAf1wokRAawluVpJbNc"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8123392,
+    "lon": -73.9027888,
+    "address": "564 Southern Blvd, Bronx",
+    "place_id": "ChIJF7g5hrr1wokRd7ejCquv8W0"
+  },
+  {
+    "name": "H Mart Ridgefield",
+    "lat": 40.8244424,
+    "lon": -74.0104123,
+    "address": "321 Broad Ave, Ridgefield",
+    "place_id": "ChIJP5EZV5b3wokR2VcsiGsJjR8"
+  },
+  {
+    "name": "City Supermarket",
+    "lat": 40.819725,
+    "lon": -74.0014936,
+    "address": "289 Bergen Blvd, Fairview",
+    "place_id": "ChIJE7aZ2b73wokRqh_Z8Jazm-Q"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.8209576,
+    "lon": -73.9920935,
+    "address": "425 Anderson Ave, Fairview",
+    "place_id": "ChIJ7UuQKbH3wokRNjJ1X0LMAcw"
+  },
+  {
+    "name": "Kikos Supermarket",
+    "lat": 40.817416,
+    "lon": -73.994401,
+    "address": "321 Anderson Ave, Fairview",
+    "place_id": "ChIJnzRdjLf3wokRtamdOXzZreQ"
+  },
+  {
+    "name": "Mitsuwa Marketplace - New Jersey",
+    "lat": 40.8161915,
+    "lon": -73.98022399999999,
+    "address": "595 River Rd, Edgewater",
+    "place_id": "ChIJOcsGVkr2wokRLmfHmhItPp0"
+  },
+  {
+    "name": "Trader Joe's",
+    "lat": 40.8196686,
+    "lon": -73.9775851,
+    "address": "715 River Rd, Edgewater",
+    "place_id": "ChIJTfsPHEz2wokR1Z1KV8S3nZ4"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8219335,
+    "lon": -73.9532072,
+    "address": "538 W 138th St, New York",
+    "place_id": "ChIJcxklv2X2wokRGAiyl1eQQOU"
+  },
+  {
+    "name": "Associated Fresh Market of 7th Avenue",
+    "lat": 40.8199552,
+    "lon": -73.9406341,
+    "address": "2444 Adam Clayton Powell Jr Blvd, New York",
+    "place_id": "ChIJ6fBblnn2wokREc0NG-qOHQk"
+  },
+  {
+    "name": "Super Foodtown of Bradhurst",
+    "lat": 40.82277149999999,
+    "lon": -73.94217499999999,
+    "address": "300 W 145th St, New York",
+    "place_id": "ChIJGXde-3v2wokRPKMWXyyNpbU"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.8196777,
+    "lon": -73.9439039,
+    "address": "2630 Frederick Douglass Blvd, New York",
+    "place_id": "ChIJd3RnZnr2wokRG09BsNRm9GQ"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.8214041,
+    "lon": -73.9389302,
+    "address": "2497 Adam Clayton Powell Jr Blvd, New York",
+    "place_id": "ChIJtckOHnn2wokRNREpX3H2XgY"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.81695490000001,
+    "lon": -73.9384621,
+    "address": "592 Malcolm X Blvd, New York",
+    "place_id": "ChIJvXWtn3f2wokRQqLoZxGv3Sc"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.8217666,
+    "lon": -73.92993249999999,
+    "address": "610 Exterior St 4th FLOOR, Bronx",
+    "place_id": "ChIJ_X2fnlv1wokRwX_q7M1vTmU"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8196215,
+    "lon": -73.95497639999999,
+    "address": "3320 Broadway, New York",
+    "place_id": "ChIJAT8wvWj2wokReKT8uGa_bYI"
+  },
+  {
+    "name": "Super Associated Fresh",
+    "lat": 40.8177284,
+    "lon": -73.9168699,
+    "address": "616 Melrose Ave, Bronx",
+    "place_id": "ChIJv9QRGMn1wokRwRfXB492UPE"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.81884,
+    "lon": -73.9182567,
+    "address": "640 Courtlandt Ave, Bronx",
+    "place_id": "ChIJlTDitM71wokRhlGD-O4LmzA"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.8203717,
+    "lon": -73.9215718,
+    "address": "675 Morris Ave, Bronx",
+    "place_id": "ChIJRyy21M31wokRJ7Te0wVFfF0"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.82520780000001,
+    "lon": -73.9196679,
+    "address": "238 E 161st St, Bronx",
+    "place_id": "ChIJgfKTRjP0wokRMrMGJYuCNPI"
+  },
+  {
+    "name": "Foodtown of Third Avenue",
+    "lat": 40.8215217,
+    "lon": -73.9119401,
+    "address": "3100 Third Ave, Bronx",
+    "place_id": "ChIJjyU4eLX1wokR8pZgAsSF7Gk"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8208883,
+    "lon": -73.9154186,
+    "address": "760 Melrose Ave, Bronx",
+    "place_id": "ChIJy5L8Tsr1wokRE4WszNtA-uw"
+  },
+  {
+    "name": "Pioneer Supermarkets",
+    "lat": 40.8231712,
+    "lon": -73.9374674,
+    "address": "2541 Adam Clayton Powell Jr Blvd, New York",
+    "place_id": "ChIJf_g4MX_2wokRvZarstT41Co"
+  },
+  {
+    "name": "Real Supermarket",
+    "lat": 40.8187663,
+    "lon": -73.9021929,
+    "address": "795 Prospect Ave, Bronx",
+    "place_id": "ChIJx2C9a7L1wokRL9FsB_URTWI"
+  },
+  {
+    "name": "Associated Supermarkets of Woodstock",
+    "lat": 40.8213067,
+    "lon": -73.9050793,
+    "address": "724 E 161st St, Bronx",
+    "place_id": "ChIJrT8lbLP1wokRiE2rLeZFXMQ"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8233964,
+    "lon": -73.9087471,
+    "address": "3220 Third Ave, Bronx",
+    "place_id": "ChIJESuAzbT1wokRC0qqsPQ0Xns"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.8178001,
+    "lon": -73.9059144,
+    "address": "745 Westchester Ave, Bronx",
+    "place_id": "ChIJvzybULH1wokRyHP7nSpS_eM"
+  },
+  {
+    "name": "Lidl",
+    "lat": 40.82263,
+    "lon": -73.92887,
+    "address": "700 Exterior St, Bronx",
+    "place_id": "ChIJIaXce331wokRI0FTxPap6h0"
+  },
+  {
+    "name": "Western Beef Supermarket",
+    "lat": 40.825001,
+    "lon": -73.9005281,
+    "address": "1041 Prospect Ave, Bronx",
+    "place_id": "ChIJveTkYVL0wokRyKh1VupQ9WY"
+  },
+  {
+    "name": "Food Fair Fresh Market",
+    "lat": 40.8211148,
+    "lon": -73.8907638,
+    "address": "1065 E 163rd St, Bronx",
+    "place_id": "ChIJTQjE_Lb1wokRmqNh-wEUB2o"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.8223587,
+    "lon": -73.89607099999999,
+    "address": "950 Westchester Ave, Bronx",
+    "place_id": "ChIJr289RlP0wokRia_OxSb5JPI"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8170324,
+    "lon": -73.8959026,
+    "address": "809 Southern Blvd, Bronx",
+    "place_id": "ChIJ5XpHHKz1wokRoulkQ_qV1Js"
+  },
+  {
+    "name": "Hanyang Mart",
+    "lat": 40.8318814,
+    "lon": -74.0107192,
+    "address": "1 Remsen Pl Unit #103, Ridgefield",
+    "place_id": "ChIJVVVVVZn3wokRGmhZm-utlv8"
+  },
+  {
+    "name": "Superfood Marketplace - Ridgefield, NJ",
+    "lat": 40.8329491,
+    "lon": -74.00251109999999,
+    "address": "543 Shaler Blvd, Ridgefield",
+    "place_id": "ChIJs9KqAKv3wokRbwaoA3OPYHc"
+  },
+  {
+    "name": "GRAND BAZAAR FOOD",
+    "lat": 40.83019100000001,
+    "lon": -73.985445,
+    "address": "744 Anderson Ave, Cliffside Park",
+    "place_id": "ChIJyfrucKv3wokRVndNbxDV_aY"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.826758,
+    "lon": -73.949782,
+    "address": "3550 Broadway, New York",
+    "place_id": "ChIJIXpRHGP2wokRae8524O_e_U"
+  },
+  {
+    "name": "Foodtown of St. Nicholas Ave",
+    "lat": 40.8259654,
+    "lon": -73.9431511,
+    "address": "756 St Nicholas Ave, New York",
+    "place_id": "ChIJAevUyn32wokRkzP0mEI6lIo"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8350471,
+    "lon": -73.9393805,
+    "address": "1016 St Nicholas Ave, New York",
+    "place_id": "ChIJk4Y0poP2wokRztPMZV1YW3U"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.8294305,
+    "lon": -73.9373255,
+    "address": "2927 Frederick Douglass Blvd #1304, New York",
+    "place_id": "ChIJ7ZMkOID2wokRekU63qr3crE"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8292461,
+    "lon": -73.9478894,
+    "address": "3632 Broadway, New York",
+    "place_id": "ChIJRQ-_A4j2wokReuz7vVTk4Lc"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.8281688,
+    "lon": -73.9249182,
+    "address": "885 Gerard Ave, Bronx",
+    "place_id": "ChIJO8ZDq2b1wokRt2zVHpGp1V0"
+  },
+  {
+    "name": "SuperFresh Bronx",
+    "lat": 40.8317069,
+    "lon": -73.9097505,
+    "address": "1188 Webster Ave, Bronx",
+    "place_id": "ChIJlYbkWUj0wokRf4KkU8y_P3c"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.8259059,
+    "lon": -73.9109138,
+    "address": "445 E 163rd St, Bronx",
+    "place_id": "ChIJTwzBv0r0wokRDWyyZcI3n10"
+  },
+  {
+    "name": "FOOD BAZAAR",
+    "lat": 40.835182,
+    "lon": -73.9024601,
+    "address": "535 E 170th St #2301, Bronx",
+    "place_id": "ChIJSUoQAkX0wokR--YEC36QXzE"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.832033,
+    "lon": -73.89233759999999,
+    "address": "1334 Louis Ni\u00f1\u00e9 Blvd, Bronx",
+    "place_id": "ChIJ0UoZzVn0wokRVxIhnadQ0JA"
+  },
+  {
+    "name": "Associated Supermarkets of Mount Eden",
+    "lat": 40.83374329999999,
+    "lon": -73.9165828,
+    "address": "206 E 167th St, Bronx",
+    "place_id": "ChIJu9loZDf0wokR06PraFj5-6w"
+  },
+  {
+    "name": "Fine Fare",
+    "lat": 40.835632,
+    "lon": -73.9205456,
+    "address": "59 E 167th St, Bronx",
+    "place_id": "ChIJIUH3ejr0wokR7rqbxVyB2HY"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.829926,
+    "lon": -73.9061564,
+    "address": "3470 Third Ave, Bronx",
+    "place_id": "ChIJdTqNzU70wokR6dXmVtuC82U"
+  },
+  {
+    "name": "Salcedo Supermarket",
+    "lat": 40.8167581,
+    "lon": -73.8863607,
+    "address": "1318 Lafayette Ave, Bronx",
+    "place_id": "ChIJeTnV4wD1wokRmzzrVr-V19w"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.8247759,
+    "lon": -73.8913242,
+    "address": "1050 Westchester Ave, Bronx",
+    "place_id": "ChIJ8c3zt1X0wokRMvyxhE4PYrI"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8348267,
+    "lon": -73.9032845,
+    "address": "3690 Third Ave, Bronx",
+    "place_id": "ChIJv4QFAUX0wokRmhNVJQCmwNg"
+  },
+  {
+    "name": "Checo Supermarket",
+    "lat": 40.815515,
+    "lon": -73.99551919999999,
+    "address": "210 Anderson Ave, Fairview",
+    "place_id": "ChIJrTp38Mf3wokRkBNHiALmG1c"
+  },
+  {
+    "name": "Nizam International Market",
+    "lat": 40.8251363,
+    "lon": -73.98785819999999,
+    "address": "608 Anderson Ave, Cliffside Park",
+    "place_id": "ChIJPYq09q33wokRbuGa8JvQ310"
+  },
+  {
+    "name": "H Mart Fort Lee Fresh",
+    "lat": 40.8456482,
+    "lon": -73.9795594,
+    "address": "1379 16th St, Fort Lee",
+    "place_id": "ChIJS5z2A-P2wokR2iak6d9fTHY"
+  },
+  {
+    "name": "Cafasso's Fairway Market",
+    "lat": 40.839403,
+    "lon": -73.9813053,
+    "address": "1214 Anderson Ave, Fort Lee",
+    "place_id": "ChIJof453P32wokRjV9gdj6dUEI"
+  },
+  {
+    "name": "Whole Foods Market",
+    "lat": 40.8247925,
+    "lon": -73.9740028,
+    "address": "905 River Rd, Edgewater",
+    "place_id": "ChIJg7-TU1D2wokRN0BTn1YCWOs"
+  },
+  {
+    "name": "Shop Fair of Washington Heights",
+    "lat": 40.8369343,
+    "lon": -73.9431359,
+    "address": "3871 Broadway, New York",
+    "place_id": "ChIJzy_UlYT2wokRKEGtqGfdt48"
+  },
+  {
+    "name": "Super Foodtown of Washington Heights",
+    "lat": 40.8359697,
+    "lon": -73.9438286,
+    "address": "600 W 160th St, New York",
+    "place_id": "ChIJRaTG9YT2wokR7BGHMk3NkgY"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.8434234,
+    "lon": -73.93845759999999,
+    "address": "1239 St Nicholas Ave, New York",
+    "place_id": "ChIJwVK7VkYPZkARQ_zlobVp4mA"
+  },
+  {
+    "name": "Extra JUMBO by Associated",
+    "lat": 40.8341669,
+    "lon": -73.94430229999999,
+    "address": "3788 Broadway, New York",
+    "place_id": "ChIJ2e5coWL3wokRjYl4IT70ejQ"
+  },
+  {
+    "name": "Extra Jumbo Market Place",
+    "lat": 40.8413696,
+    "lon": -73.92245059999999,
+    "address": "1384 Nelson Ave, Bronx",
+    "place_id": "ChIJOxfN7jz0wokRZMb6d0G3Fqw"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.8412775,
+    "lon": -73.9247276,
+    "address": "156 W 170th St, Bronx",
+    "place_id": "ChIJN6hXTiP0wokRBrXX_jsVHJ4"
+  },
+  {
+    "name": "Pioneer Fresh of Highbridge",
+    "lat": 40.8360561,
+    "lon": -73.9250977,
+    "address": "1150-66 Woodycrest Ave, Bronx",
+    "place_id": "ChIJMUUeWiX0wokRsuoaTbKw_jk"
+  },
+  {
+    "name": "Ideal Food Basket",
+    "lat": 40.835839,
+    "lon": -73.9275251,
+    "address": "1136 Ogden Ave, Bronx",
+    "place_id": "ChIJVckyhyX0wokRF2iC8f1SNdc"
+  },
+  {
+    "name": "Key Food Fresh",
+    "lat": 40.8333979,
+    "lon": -73.91476039999999,
+    "address": "256 E 167th St, Bronx",
+    "place_id": "ChIJ-aFdkDf0wokRRnpUY50EHEo"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.83832109999999,
+    "lon": -73.9131993,
+    "address": "210 E 170th St, Bronx",
+    "place_id": "ChIJ8xA0uzj0wokRCQmEc3ZwFjw"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.8450934,
+    "lon": -73.89075220000001,
+    "address": "1 E Tremont Ave #708, Bronx",
+    "place_id": "ChIJ4X63jWH0wokR5ZLyW1u_Byo"
+  },
+  {
+    "name": "Price Choice Foodmarkets",
+    "lat": 40.84372279999999,
+    "lon": -73.8874226,
+    "address": "807 E Tremont Ave, Bronx",
+    "place_id": "ChIJRzfnQYr0wokRxUxwTNUQaU8"
+  },
+  {
+    "name": "SuperFresh Mount Eden",
+    "lat": 40.841047,
+    "lon": -73.9168928,
+    "address": "1434 Jerome Ave, Bronx",
+    "place_id": "ChIJK9oLqov1wokRf1bJQqwz9aM"
+  },
+  {
+    "name": "Shop Fair of Claremont",
+    "lat": 40.8372365,
+    "lon": -73.9102522,
+    "address": "306 E 170th St, Bronx",
+    "place_id": "ChIJ5yyxIkf0wokR0HDaPnDvFPk"
+  },
+  {
+    "name": "ShopRite of Palisades Park",
+    "lat": 40.8520206,
+    "lon": -74.0045809,
+    "address": "201 Roosevelt Pl, Palisades Park",
+    "place_id": "ChIJU-HCghT3wokRcC8TFWFrSr8"
+  },
+  {
+    "name": "HAN MI Mart & Liquor",
+    "lat": 40.8462469,
+    "lon": -73.9987938,
+    "address": "220 Broad Ave, Palisades Park",
+    "place_id": "ChIJs1Cz2BH3wokR8dbV9jz7yFc"
+  },
+  {
+    "name": "HanNam Mart",
+    "lat": 40.8514808,
+    "lon": -73.98688360000001,
+    "address": "1475 Bergen Blvd, Fort Lee",
+    "place_id": "ChIJWT8fuh_3wokRh12lagTERc0"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.849001,
+    "lon": -73.9382069,
+    "address": "4211 Broadway #17, New York",
+    "place_id": "ChIJPwo0reL3wokRTcnr2buH-RA"
+  },
+  {
+    "name": "The Food Emporium",
+    "lat": 40.8459771,
+    "lon": -73.93830439999999,
+    "address": "4138 Broadway, New York",
+    "place_id": "ChIJc0nrT6z3wokRYVXklfh9Dy8"
+  },
+  {
+    "name": "Frank's Market",
+    "lat": 40.8553393,
+    "lon": -73.93728569999999,
+    "address": "807-809 W 187th St, New York",
+    "place_id": "ChIJeXQ8mKf2wokRe4ANw9tClcc"
+  },
+  {
+    "name": "Associated Supermarket",
+    "lat": 40.8549397,
+    "lon": -73.9367792,
+    "address": "592 Fort Washington Ave, New York",
+    "place_id": "ChIJg4pbg6f2wokRzjCi2mcJkfM"
+  },
+  {
+    "name": "Dans Supermarket",
+    "lat": 40.8517673,
+    "lon": -73.9324338,
+    "address": "602 W 185th St, New York",
+    "place_id": "ChIJ4_HzJhz0wokRvsRUnl_0tAk"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.8539913,
+    "lon": -73.93400729999999,
+    "address": "4365 Broadway, New York",
+    "place_id": "ChIJiaZRoR30wokRfKOyDhF7iVc"
+  },
+  {
+    "name": "Pioneer Supermarkets of Morris Heights",
+    "lat": 40.846326,
+    "lon": -73.9185194,
+    "address": "107 Featherbed Ln, Bronx",
+    "place_id": "ChIJP52ndxb0wokR8BtQ6gPZFA0"
+  },
+  {
+    "name": "Xcellente Supermarket",
+    "lat": 40.8538767,
+    "lon": -73.9301969,
+    "address": "1568 St Nicholas Ave, New York",
+    "place_id": "ChIJWW-_gRz0wokRMWhRqC9AevY"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8388932,
+    "lon": -73.9147818,
+    "address": "148 E 170th St, Bronx",
+    "place_id": "ChIJRwz2zTj0wokR3Zze_Qka2LY"
+  },
+  {
+    "name": "Food Dynasty Supermarket",
+    "lat": 40.85367919999999,
+    "lon": -73.9093698,
+    "address": "40-48 W Burnside Ave, Bronx",
+    "place_id": "ChIJM3AEfXL0wokR3Cn_pcjIFUU"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.85410700000001,
+    "lon": -73.91416219999999,
+    "address": "127 W Burnside Ave, Bronx",
+    "place_id": "ChIJP_EJoBL0wokRntm4eaFDzMg"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.8481655,
+    "lon": -73.91000799999999,
+    "address": "1791 Walton Ave # 2, Bronx",
+    "place_id": "ChIJU8YQfGv0wokREuFe4-34UHA"
+  },
+  {
+    "name": "Bravo Supermarkets",
+    "lat": 40.8506802,
+    "lon": -73.9008557,
+    "address": "309 E Burnside Ave, Bronx",
+    "place_id": "ChIJma-KjG_0wokR3DRD0XwrTAk"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8523454,
+    "lon": -73.9044254,
+    "address": "148 E Burnside Ave, Bronx",
+    "place_id": "ChIJpVnMJ270wokRLoCQe_dPqDo"
+  },
+  {
+    "name": "ShopRite of Hackensack",
+    "lat": 40.8626533,
+    "lon": -74.0341122,
+    "address": "500 S River St, Hackensack",
+    "place_id": "ChIJK5KDJ-H5wokRoYe58xRJyxM"
+  },
+  {
+    "name": "Village IGA",
+    "lat": 40.8570419,
+    "lon": -74.0249412,
+    "address": "201 Main St, Ridgefield Park",
+    "place_id": "ChIJlcpwJmH3wokRky2YedDJZHs"
+  },
+  {
+    "name": "H Mart Little Ferry",
+    "lat": 40.8564643,
+    "lon": -74.03396599999999,
+    "address": "260 Bergen Turnpike, Little Ferry",
+    "place_id": "ChIJN9XOLNn5wokRNXQL-eYpNRc"
+  },
+  {
+    "name": "H Mart Leonia",
+    "lat": 40.8615001,
+    "lon": -73.9879023,
+    "address": "315 Broad Ave, Leonia",
+    "place_id": "ChIJl4IujCb3wokRib9ILrV9mOQ"
+  },
+  {
+    "name": "ACME Markets",
+    "lat": 40.8561878,
+    "lon": -73.9650974,
+    "address": "2160 Lemoine Ave, Fort Lee",
+    "place_id": "ChIJUcPHVMH2wokRAbMo-nSGskQ"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.86564509999999,
+    "lon": -73.9265171,
+    "address": "4772 Broadway, New York",
+    "place_id": "ChIJ23e-cPjzwokRtNDn20ldxFk"
+  },
+  {
+    "name": "Shop Fair of St Nicholas",
+    "lat": 40.846653,
+    "lon": -73.93592129999999,
+    "address": "1331 St Nicholas Ave, New York",
+    "place_id": "ChIJZbK2R5n3wokRWYIVAfJCUrM"
+  },
+  {
+    "name": "Shop Fair of Fort George",
+    "lat": 40.85771889999999,
+    "lon": -73.93191159999999,
+    "address": "4490 Broadway, New York",
+    "place_id": "ChIJ75ffFQP0wokRT9Qqcc6CeRw"
+  },
+  {
+    "name": "Dan's Supermarket",
+    "lat": 40.8639516,
+    "lon": -73.9254703,
+    "address": "96 Sherman Ave #102, New York",
+    "place_id": "ChIJqUAowAf0wokRpMwK-Tcffyg"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.8440192,
+    "lon": -73.9136979,
+    "address": "49 E Mt Eden Ave, Bronx",
+    "place_id": "ChIJkfVCXxX0wokRCaJ-WK_31Yk"
+  },
+  {
+    "name": "Super Gigante Foods",
+    "lat": 40.8619453,
+    "lon": -73.918235,
+    "address": "3815 9th Ave, New York",
+    "place_id": "ChIJv96ZE5b1wokR8WKIhzZyRsU"
+  },
+  {
+    "name": "Extra Jumbo by Antillana",
+    "lat": 40.8485032,
+    "lon": -73.9326922,
+    "address": "312 Audubon Ave, New York",
+    "place_id": "ChIJMSXLYe71wokROt5QzwOXVzY"
+  },
+  {
+    "name": "Food Dynasty Supermarkets",
+    "lat": 40.86257459999999,
+    "lon": -73.9026387,
+    "address": "24 W Fordham Rd, Bronx",
+    "place_id": "ChIJDxfJPIjzwokRVxHc6pF0s6k"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8623414,
+    "lon": -73.9050608,
+    "address": "2358 University Ave, Bronx",
+    "place_id": "ChIJUQ38Enb0wokR1BZ3OsrGzdw"
+  },
+  {
+    "name": "Food Fair Fresh Market",
+    "lat": 40.8633905,
+    "lon": -73.9008381,
+    "address": "2467 Jerome Ave, Bronx",
+    "place_id": "ChIJN0qlGNzzwokRikD1d7K3wQI"
+  },
+  {
+    "name": "Pioneer Supermarkets of Fordham Manor",
+    "lat": 40.8600622,
+    "lon": -73.897672,
+    "address": "2400 Ryer Ave, Bronx",
+    "place_id": "ChIJR4Yy9Hj0wokRiX44VbKaz20"
+  },
+  {
+    "name": "SHOP FRESH FOOD MARKETPLACE",
+    "lat": 40.8626469,
+    "lon": -73.9065856,
+    "address": "124 W Fordham Rd, Bronx",
+    "place_id": "ChIJ608CAHb0wokRM_UwV4v7RLQ"
+  },
+  {
+    "name": "Fine fare Supermarket",
+    "lat": 40.8636939,
+    "lon": -73.88922819999999,
+    "address": "2645 Webster Ave, Bronx",
+    "place_id": "ChIJhbeM3oHzwokREn9bqC_NjSQ"
+  },
+  {
+    "name": "Fine Fare Supermarket",
+    "lat": 40.8630839,
+    "lon": -73.8960525,
+    "address": "2526 Grand Concourse, Bronx",
+    "place_id": "ChIJedhjPgDzwokR_4LnpJx4Ik8"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8574692,
+    "lon": -73.9008139,
+    "address": "2276 Creston Ave, Bronx",
+    "place_id": "ChIJ5ZBMV3f0wokRQ2B4aD6W2ls"
+  },
+  {
+    "name": "Bronx Marketplace",
+    "lat": 40.858744,
+    "lon": -73.90472299999999,
+    "address": "19 W 183rd St, Bronx",
+    "place_id": "ChIJte8EXR_1wokRlTq0Mu35uHY"
+  },
+  {
+    "name": "Lindo Supermarket",
+    "lat": 40.8589265,
+    "lon": -73.9052109,
+    "address": "35 W 183rd St, Bronx",
+    "place_id": "ChIJD2SxlHb0wokRc6Qk9eSWZfc"
+  },
+  {
+    "name": "Western Beef Supermarket",
+    "lat": 40.8513947,
+    "lon": -73.8979155,
+    "address": "2050 Webster Ave, Bronx",
+    "place_id": "ChIJKx2vCmX0wokRlVNW_1C8xbg"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8591433,
+    "lon": -73.9064211,
+    "address": "60 W 183rd St, Bronx",
+    "place_id": "ChIJB7k5zNb1wokRwjCqMP-rEyY"
+  },
+  {
+    "name": "Pioneer Supermarket of Arthur Avenue",
+    "lat": 40.8528927,
+    "lon": -73.8894306,
+    "address": "592 E 183rd St, Bronx",
+    "place_id": "ChIJ26j8XQD1wokR2yEEv4eOpdw"
+  },
+  {
+    "name": "Modern Market",
+    "lat": 40.8552397,
+    "lon": -73.8880964,
+    "address": "2385 Arthur Ave, Bronx",
+    "place_id": "ChIJDUSXKXb1wokR0sGwaBPWyx0"
+  },
+  {
+    "name": "Food dynasty supermarket",
+    "lat": 40.8595975,
+    "lon": -73.9033698,
+    "address": "2343 Jerome Ave, Bronx",
+    "place_id": "ChIJLee715b1wokRohn2ckGjJf8"
+  },
+  {
+    "name": "H Mart Fort Lee",
+    "lat": 40.8610891,
+    "lon": -73.97098380000001,
+    "address": "112 Linwood Drive, 130 Linwood Plaza, Fort Lee",
+    "place_id": "ChIJVTeNl8n2wokRX_FeNlWctrU"
+  },
+  {
+    "name": "Mediterranean Gourmet",
+    "lat": 40.8554493,
+    "lon": -73.9777629,
+    "address": "490 Main St, Fort Lee",
+    "place_id": "ChIJC3Pq5972wokRty5TT32EnbY"
+  },
+  {
+    "name": "Ozzie's Fresh Market",
+    "lat": 40.8548897,
+    "lon": -73.9368021,
+    "address": "592 Fort Washington Ave, New York",
+    "place_id": "ChIJd_eDnKf2wokRd13jTkdjU3o"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8604272,
+    "lon": -73.9286766,
+    "address": "72 Nagle Ave, New York",
+    "place_id": "ChIJs1GGGAT0wokRtJmJ9mxIC4E"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8673003,
+    "lon": -73.92160729999999,
+    "address": "4918 Broadway, New York",
+    "place_id": "ChIJd7HpBvfzwokR2YDxeHDT6n8"
+  },
+  {
+    "name": "Dan's Supermarket",
+    "lat": 40.8664501,
+    "lon": -73.9207588,
+    "address": "572 W 207th St, New York",
+    "place_id": "ChIJpQg2TvbzwokRjWca57Ds4cY"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8704959,
+    "lon": -73.91535549999999,
+    "address": "5069 Broadway, New York",
+    "place_id": "ChIJhbOLBfPzwokR246fF-9P0YA"
+  },
+  {
+    "name": "Franco Supermarket",
+    "lat": 40.84457769999999,
+    "lon": -73.9369858,
+    "address": "1274 St Nicholas Ave, New York",
+    "place_id": "ChIJDRD_AZX3wokRERTVXg_EHH8"
+  },
+  {
+    "name": "SHOP FRESH FOOD MARKETPLACE",
+    "lat": 40.8571274,
+    "lon": -73.90052899999999,
+    "address": "2285 Grand Concourse, Bronx",
+    "place_id": "ChIJldCcVn31wokRk2UT8f3egHY"
+  },
+  {
+    "name": "Compare Foods Supermarket",
+    "lat": 40.861968,
+    "lon": -73.917963,
+    "address": "3815 9th Ave, New York",
+    "place_id": "ChIJe6Am1sH1wokRzPVQv3kI33A"
+  },
+  {
+    "name": "Shop Fair Supermarkets",
+    "lat": 40.8521638,
+    "lon": -73.9314278,
+    "address": "1510 St Nicholas Ave, New York",
+    "place_id": "ChIJiRaYEwD1wokROHU-nEv5mH8"
+  },
+  {
+    "name": "ANTILLANA SUPERMARKET",
+    "lat": 40.8641815,
+    "lon": -73.9185779,
+    "address": "490 W 207th St, New York",
+    "place_id": "ChIJX4ZIFOH1wokR7I8h84dRidI"
+  },
+  {
+    "name": "Sedgwick Marketplace",
+    "lat": 40.8749773,
+    "lon": -73.9016336,
+    "address": "2891 Sedgwick Ave, Bronx",
+    "place_id": "ChIJdcEIkJDzwokR8zlk7hZkVaQ"
+  },
+  {
+    "name": "Pola Supermarket Corporation",
+    "lat": 40.846653,
+    "lon": -73.93592129999999,
+    "address": "1331 St Nicholas Ave, New York",
+    "place_id": "ChIJH8R0_Z_2wokRboN-QgYajzY"
+  },
+  {
+    "name": "SuperFresh Fordham Manor",
+    "lat": 40.86880499999999,
+    "lon": -73.8883017,
+    "address": "277 E 198th St, Bronx",
+    "place_id": "ChIJW03CDHjzwokRa8eDMwa7Z9Q"
+  },
+  {
+    "name": "Fine Fare Supermarkets",
+    "lat": 40.875013,
+    "lon": -73.8867175,
+    "address": "3131, 1 Grand Concourse, Bronx",
+    "place_id": "ChIJ_ZYpznXzwokRk2C8GatRV4g"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.870683,
+    "lon": -73.8922827,
+    "address": "30 E 198th St, Bronx",
+    "place_id": "ChIJG8JuxZzzwokRluDp0uSEx_8"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8680656,
+    "lon": -73.9007646,
+    "address": "82 W Kingsbridge Rd, Bronx",
+    "place_id": "ChIJSZXV0STzwokRuRhAI-2SQxo"
+  },
+  {
+    "name": "PIONEER Supermarkets Bronx - Jerome Ave",
+    "lat": 40.8582929,
+    "lon": -73.90355679999999,
+    "address": "2262 Jerome Ave, Bronx",
+    "place_id": "ChIJD1dLJ3f0wokRygqyJp4PUB8"
+  },
+  {
+    "name": "Morton Williams the Fresh Marketplace",
+    "lat": 40.8673914,
+    "lon": -73.89670890000001,
+    "address": "15 E Kingsbridge Rd, Bronx",
+    "place_id": "ChIJfzvzPoTzwokRTjewQbVTS_8"
+  },
+  {
+    "name": "Universal Food Markets",
+    "lat": 40.8833815,
+    "lon": -74.0446384,
+    "address": "154 State St, Hackensack",
+    "place_id": "ChIJUfK6nh36wokRkUeRIGIiK_s"
+  },
+  {
+    "name": "Ben's Market",
+    "lat": 40.8785316,
+    "lon": -73.91750259999999,
+    "address": "19 Knolls Crescent # B, Bronx",
+    "place_id": "ChIJmya3COzzwokRov1zgAR5NVs"
+  },
+  {
+    "name": "CTown Supermarkets",
+    "lat": 40.8758087,
+    "lon": -73.9086986,
+    "address": "5249 Broadway, New York",
+    "place_id": "ChIJwYSxtpPzwokR5NVNLPMDrgc"
+  },
+  {
+    "name": "Foodtown of Riverdale",
+    "lat": 40.8785943,
+    "lon": -73.9052674,
+    "address": "5555 Broadway, Bronx",
+    "place_id": "ChIJI-ezv5bzwokRR9-2AZN28H8"
+  },
+  {
+    "name": "Key Food Supermarkets",
+    "lat": 40.8854455,
+    "lon": -73.9092402,
+    "address": "540 W 235th St, Bronx",
+    "place_id": "ChIJlQj-_r7zwokRQJWjA_5jd4I"
+  },
+  {
+    "name": "ALDI",
+    "lat": 40.8778363,
+    "lon": -73.90465569999999,
+    "address": "5532 Broadway, Bronx",
+    "place_id": "ChIJaw8esZbzwokRh7vHu9jhVRk"
+  },
+  {
+    "name": "Garden Gourmet Market - Supermarket",
+    "lat": 40.88104149999999,
+    "lon": -73.9035239,
+    "address": "5665 Broadway, Bronx",
+    "place_id": "ChIJcbLfzJfzwokRqGo5ocF2HXg"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8828954,
+    "lon": -73.8930355,
+    "address": "50 Van Cortlandt Ave W, Bronx",
+    "place_id": "ChIJfbmVCqHzwokR3O-6WaX-Pos"
+  },
+  {
+    "name": "Hackensack Market",
+    "lat": 40.8924425,
+    "lon": -74.0442782,
+    "address": "120 Passaic St, Hackensack",
+    "place_id": "ChIJ273FehD6wokRJHVdapzNET4"
+  },
+  {
+    "name": "ALDI",
+    "lat": 40.89437119999999,
+    "lon": -74.03904229999999,
+    "address": "492 Main St, Hackensack",
+    "place_id": "ChIJ-RYrqw_6wokRdi7dLOe9SEw"
+  },
+  {
+    "name": "Giant Farmer's Market",
+    "lat": 40.8884201,
+    "lon": -74.0399322,
+    "address": "324 Main St, Hackensack",
+    "place_id": "ChIJ9Z4x3QT6wokRl0b778TOuNI"
+  },
+  {
+    "name": "Cedar Market",
+    "lat": 40.8910516,
+    "lon": -74.0282048,
+    "address": "646 Cedar Ln, Teaneck",
+    "place_id": "ChIJWYvHwafwwokRVx08uahKX8w"
+  },
+  {
+    "name": "Food Universe Marketplace",
+    "lat": 40.8785057,
+    "lon": -73.90414419999999,
+    "address": "184 W 231st St, Bronx",
+    "place_id": "ChIJUa_jFsvzwokRYAVmUatgzIY"
+  }
+]
