@@ -43,9 +43,9 @@ def create_store_products_table(conn):
 
 def create_indices(conn):
     c = conn.cursor()
-    c.execute('CREATE INDEX idx_stores_lat_lon ON Stores(lat, lon)')
-    c.execute('CREATE INDEX idx_store_products_name ON StoreProducts(name)')
-    c.execute('CREATE INDEX idx_products_category ON Products(category)')
+    # c.execute('CREATE INDEX idx_stores_lat_lon ON Stores(lat, lon)')
+    # c.execute('CREATE INDEX idx_store_products_name ON StoreProducts(name)')
+    # c.execute('CREATE INDEX idx_products_category ON Products(category)')
 
 def init_db():
     conn = sqlite3.connect('db/basketroute.db')
@@ -57,3 +57,10 @@ def init_db():
     
     conn.commit()
     conn.close()
+
+if __name__ == '__main__':
+    init_db()
+    print("Database initialized successfully.")
+    print("Tables created: Stores, Products, StoreProducts.")
+    print("Indices created: idx_stores_lat_lon, idx_store_products_name, idx_products_category.")
+    print("You can now populate the database with data.")
