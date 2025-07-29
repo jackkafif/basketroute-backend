@@ -7,27 +7,14 @@ import json
 from geopy.distance import geodesic
 from flask_cors import CORS
 
-from calculator.optimizer import solve_shopping_ip, ALL_ITEMS
-from db.query import parse_location, load_all_stores, filter_stores_by_distance
+from app.calculator.optimizer import solve_shopping_ip, ALL_ITEMS
+from app.db.query import parse_location, load_all_stores, filter_stores_by_distance
 
 app = Flask(__name__)
 CORS(app)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
-
-# Geocode address to (lat, lon) using Google Maps
-GOOGLE_MAPS_API_KEY = os.environ.get('GOOGLE_MAPS_API_KEY', 'YOUR_GOOGLE_MAPS_API_KEY_HERE')
-def geocode_address(address):
-    url = 'https://maps.googleapis.com/maps/api/geocode/json'
-    params = {'address': address, 'key': GOOGLE_MAPS_API_KEY}
-    resp = requests.get(url, params=params)
-    resp.raise_for_status()
-    data = resp.json()
-    if not data['results']:
-        return None
-    loc = data['results'][0]['geometry']['location']
-    return float(loc['lat']), float(loc['lng'])
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -40,8 +27,6 @@ def index():
         max_time = float(request.form.get('max_time') or 120)
         # Handle coordinates or address
         coords = parse_location(location)
-        # if not coords:
-        #     coords = geocode_address(location)
         if not coords:
             global last_result
             last_result = {'plan': [], 'total_cost': 0, 'status': 'Invalid address'}
