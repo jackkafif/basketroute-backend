@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for, jsonify, render_template
 import pulp
 import requests
 import random
@@ -81,7 +81,7 @@ def index():
             store['inventory'] = {item: random.randint(1, 5) for item in random.sample(ALL_ITEMS, k=random.randint(4, 7))}
         last_result = solve_shopping_ip(shopping_list, stores, max_stores, user_latlon=(lat, lon))
         return redirect(url_for('results'))
-    return render_template('index.html')
+    return render_template("index.html")
 
 @app.route('/results')
 def results():
