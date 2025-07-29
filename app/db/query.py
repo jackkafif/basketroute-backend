@@ -10,8 +10,24 @@ def parse_location(location):
     except Exception:
         return None
     
-def get_all_products():
-    conn = sqlite3.connect('db/basketroute.db')
+def get_products_grouped_by_category(conn):
+    cursor = conn.cursor()
+    cursor.execute('SELECT id, name, category, unit FROM Products')
+    products = cursor.fetchall()
+    conn.close()
+    grouped_products = {}
+    for product in products:
+        product_id, name, category, unit = product
+        if category not in grouped_products:
+            grouped_products[category] = []
+        grouped_products[category].append({
+            'id': product_id,
+            'name': name,
+            'unit': unit
+        })
+    return grouped_products
+    
+def get_all_products(conn):
     cursor = conn.cursor()
     cursor.execute('SELECT id, name, category, unit FROM Products')
     products = cursor.fetchall()
@@ -23,22 +39,23 @@ def get_all_products():
         'unit': product[3]
     } for product in products]
 
-def get_product_prices(store_id, product_id):
-    conn = sqlite3.connect('db/basketroute.db')
+def get_product_prices(conn, product_name):
     cursor = conn.cursor()
     cursor.execute('''
-        SELECT price, inventory, last_updated FROM StoreProducts
-        WHERE store_id = ? AND product_id = ?
-    ''', (store_id, product_id))
-    price_info = cursor.fetchone()
+        SELECT sp.store_id, s.name, sp.price, sp.inventory, sp.last_updated
+        FROM StoreProducts sp
+        JOIN Stores s ON sp.store_id = s.id
+        WHERE sp.product_id = (SELECT id FROM Products WHERE name = ?)
+    ''', (product_name,))
+    prices = cursor.fetchall()
     conn.close()
-    if price_info:
-        return {
-            'price': price_info[0],
-            'inventory': price_info[1],
-            'last_updated': price_info[2]
-        }
-    return None
+    return [{
+        'store_id': price[0],
+        'store_name': price[1],
+        'price': price[2],
+        'inventory': price[3],
+        'last_updated': price[4]
+    } for price in prices]
 
 def get_stores_nearby(location, radius_km=5, max_stores=20):
     lat_lon = parse_location(location)
