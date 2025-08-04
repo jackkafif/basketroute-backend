@@ -8,13 +8,17 @@ from geopy.distance import geodesic
 from flask_cors import CORS
 import sqlite3
 
-from app.calculator.optimizer import solve_shopping_ip, ALL_ITEMS
-from app.db.query import get_all_products, get_product_prices, get_stores_nearby, get_products_grouped_by_category
+from app.calculator.optimizer import solve_shopping_ip, translate_ip_result_to_plan
+from app.db.query import (
+    get_all_products, get_product_prices, 
+    get_stores_nearby, get_products_grouped_by_category, 
+    get_all_stores, get_stores_like, build_item_store_matrix
+)
 
 app = Flask(__name__)
 CORS(app)
 
-DATABASE = 'db/basketroute.db'
+DATABASE = 'db/fake_basketroute.db'
 def get_db():
     if not hasattr(g, 'db'):
         g.db = sqlite3.connect(DATABASE)
@@ -27,12 +31,60 @@ def close_db(error):
         db.close()
 
 def create_connection():
-    db_path = os.path.join(os.path.dirname(__file__), 'db', 'basketroute.db')
+    db_path = os.path.join(os.path.dirname(__file__), DATABASE)
     conn = sqlite3.connect(db_path)
     return conn
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
+
+@app.route('/')
+def index():
+    conn = create_connection()
+    stores = get_all_stores(conn)
+    conn = create_connection()
+    products = get_all_products(conn)
+    conn = create_connection()
+    grouped_products = get_products_grouped_by_category(conn)
+    return render_template('index.html', stores=stores, products=products, grouped_products=grouped_products)
+
+@app.route('/api/optimize', methods=['POST'])
+def optimize_shopping():
+    data = request.json
+    item_names = data.get('items', [])
+    store_names = data.get('stores', [])
+    print("Received item names:", item_names)
+    print("Received store names:", store_names)
+    item_store_matrix = build_item_store_matrix(create_connection(), item_names, store_names)
+    print("Item-Store Matrix:", item_store_matrix)
+    if not item_store_matrix:
+        return jsonify({'error': 'No valid item-store matrix found'}), 400
+
+    if not item_names or not store_names or not item_store_matrix:
+        return jsonify({'error': 'Invalid input data'}), 400
+
+    plans, total_cost = solve_shopping_ip(item_names, store_names, item_store_matrix)
+    translated = translate_ip_result_to_plan(plans)
+
+    results = {}
+    results['Plan'] = translated
+    results['Cost'] = total_cost
+
+    print(json.dumps(results))
+
+    return jsonify(results)
+
+@app.route('/api/all_stores')
+def all_stores():
+    conn = create_connection()
+    stores = get_all_stores(conn)
+    return jsonify(stores)
+
+@app.route('/api/stores_like/<string:name>')
+def stores_like(name):
+    conn = create_connection()
+    stores = get_stores_like(conn, name)
+    return jsonify(stores)
 
 @app.route('/api/products')
 def get_products():

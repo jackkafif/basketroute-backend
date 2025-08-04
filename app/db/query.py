@@ -10,6 +10,36 @@ def parse_location(location):
     except Exception:
         return None
     
+def get_all_stores(conn):
+    cursor = conn.cursor()
+    cursor.execute('SELECT id, name, lat, lon, address, phone, website FROM Stores')
+    stores = cursor.fetchall()
+    conn.close()
+    return [{
+        'id': store[0],
+        'name': store[1],
+        'lat': store[2],
+        'lon': store[3],
+        'address': store[4],
+        'phone': store[5],
+        'website': store[6]
+    } for store in stores]
+
+def get_stores_like(conn, name):
+    cursor = conn.cursor()
+    cursor.execute('SELECT id, name, lat, lon, address, phone, website FROM Stores WHERE name LIKE ?', (f'%{name}%',))
+    stores = cursor.fetchall()
+    conn.close()
+    return [{
+        'id': store[0],
+        'name': store[1],
+        'lat': store[2],
+        'lon': store[3],
+        'address': store[4],
+        'phone': store[5],
+        'website': store[6]
+    } for store in stores]
+    
 def get_products_grouped_by_category(conn):
     cursor = conn.cursor()
     cursor.execute('SELECT id, name, category, unit FROM Products')
@@ -26,6 +56,47 @@ def get_products_grouped_by_category(conn):
             'unit': unit
         })
     return grouped_products
+
+def build_item_store_matrix(conn, item_names, store_names):
+    """
+    Builds a matrix of items and their corresponding stores with prices and inventory.
+    Args:
+        item_names (list): List of item names.
+        store_names (list): List of store names.
+    Returns:
+        item_store_matrix (list of dict): List of dictionaries where each dictionary represents an item
+            with its prices and inventory in different stores."""
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT sp.store_id, p.name, sp.price, sp.inventory
+        FROM StoreProducts sp
+        JOIN Products p ON sp.product_id = p.id
+        WHERE p.name IN ({})
+    '''.format(','.join(['?'] * len(item_names))), item_names)
+    
+    rows = cursor.fetchall()
+
+    item_store_matrix = []
+    for item in item_names:
+        item_data = {'name': item, 'stores': []}
+        for store_name in store_names:
+            store_data = {
+                'store_name': store_name,
+                'price': 0.0,
+                'inventory': 0.0
+            }
+            for row in rows:
+                store_id, product_name, price, inventory = row
+                if product_name == item and store_name in store_names:
+                    store_data['store_name'] = store_name
+                    store_data['price'] = price
+                    store_data['inventory'] = inventory
+                    break
+            item_data['stores'].append(store_data)
+
+        item_store_matrix.append(item_data)
+    
+    return item_store_matrix
     
 def get_all_products(conn):
     cursor = conn.cursor()

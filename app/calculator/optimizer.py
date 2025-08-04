@@ -1,129 +1,80 @@
 import pulp
-import requests
-import random
-import os
-import json
-from geopy.distance import geodesic
+import re
 
-ITEM_PRICES = {
-    'cheese': 5, 'tomato': 2, 'flour': 1, 'yeast': 1, 'olive oil': 4, 'basil': 2, 'pepperoni': 6, 'mushrooms': 3, 'onion': 1, 'bell pepper': 2
-}
-ALL_ITEMS = list(ITEM_PRICES.keys())
+def solve_shopping_ip(item_names, store_names, item_store_matrix, max_stores=3, min_stores=0):
+    prob = pulp.LpProblem("GroceryShopping", pulp.LpMinimize)
 
-def solve_shopping_ip(shopping_list, stores, max_stores, user_latlon=None):
-    # Option 1: Minimize total cost
-    prob_cost = pulp.LpProblem('GroceryShoppingCost', pulp.LpMinimize)
-    x = {s['name']: pulp.LpVariable(f"visit_{s['name']}", cat='Binary') for s in stores}
-    y = {(s['name'], item): pulp.LpVariable(f"buy_{item}_at_{s['name']}", cat='Binary')
-         for s in stores for item in shopping_list}
-    prob_cost += pulp.lpSum([ITEM_PRICES[item] * y[(s['name'], item)] for s in stores for item in shopping_list])
-    for item in shopping_list:
-        prob_cost += pulp.lpSum([y[(s['name'], item)] for s in stores]) >= 1
-    for s in stores:
-        for item in shopping_list:
-            if item not in s['inventory']:
-                prob_cost += y[(s['name'], item)] == 0
-    for s in stores:
-        for item in shopping_list:
-            prob_cost += y[(s['name'], item)] <= x[s['name']]
-    prob_cost += pulp.lpSum([x[s['name']] for s in stores]) <= max_stores
-    prob_cost.solve()
-    plan_cost = []
-    for s in stores:
-        if x[s['name']].varValue > 0.5:
-            items_bought = [item for item in shopping_list if y[(s['name'], item)].varValue > 0.5]
-            plan_cost.append({'store': s['name'], 'items': items_bought})
-    total_cost = sum(ITEM_PRICES[item] for s in plan_cost for item in s['items'])
-    num_stores = len(plan_cost)
-    total_distance = 0
-    if user_latlon:
-        for s in plan_cost:
-            store = next(st for st in stores if st['name'] == s['store'])
-            total_distance += geodesic(user_latlon, (store['lat'], store['lon'])).km
-    # Option 2: Minimize number of stores
-    prob_stores = pulp.LpProblem('GroceryShoppingStores', pulp.LpMinimize)
-    x2 = {s['name']: pulp.LpVariable(f"visit2_{s['name']}", cat='Binary') for s in stores}
-    y2 = {(s['name'], item): pulp.LpVariable(f"buy2_{item}_at_{s['name']}", cat='Binary')
-         for s in stores for item in shopping_list}
-    prob_stores += pulp.lpSum([x2[s['name']] for s in stores])
-    for item in shopping_list:
-        prob_stores += pulp.lpSum([y2[(s['name'], item)] for s in stores]) >= 1
-    for s in stores:
-        for item in shopping_list:
-            if item not in s['inventory']:
-                prob_stores += y2[(s['name'], item)] == 0
-    for s in stores:
-        for item in shopping_list:
-            prob_stores += y2[(s['name'], item)] <= x2[s['name']]
-    prob_stores += pulp.lpSum([x2[s['name']] for s in stores]) <= max_stores
-    prob_stores.solve()
-    plan_stores = []
-    for s in stores:
-        if x2[s['name']].varValue > 0.5:
-            items_bought = [item for item in shopping_list if y2[(s['name'], item)].varValue > 0.5]
-            plan_stores.append({'store': s['name'], 'items': items_bought})
-    total_cost2 = sum(ITEM_PRICES[item] for s in plan_stores for item in s['items'])
-    num_stores2 = len(plan_stores)
-    total_distance2 = 0
-    if user_latlon:
-        for s in plan_stores:
-            store = next(st for st in stores if st['name'] == s['store'])
-            total_distance2 += geodesic(user_latlon, (store['lat'], store['lon'])).km
-    # Option 3: Minimize total distance (if user location is known)
-    plan_distance = []
-    total_cost3 = None
-    num_stores3 = None
-    total_distance3 = None
-    if user_latlon:
-        prob_dist = pulp.LpProblem('GroceryShoppingDistance', pulp.LpMinimize)
-        x3 = {s['name']: pulp.LpVariable(f"visit3_{s['name']}", cat='Binary') for s in stores}
-        y3 = {(s['name'], item): pulp.LpVariable(f"buy3_{item}_at_{s['name']}", cat='Binary')
-             for s in stores for item in shopping_list}
-        prob_dist += pulp.lpSum([geodesic(user_latlon, (s['lat'], s['lon'])).km * x3[s['name']] for s in stores])
-        for item in shopping_list:
-            prob_dist += pulp.lpSum([y3[(s['name'], item)] for s in stores]) >= 1
-        for s in stores:
-            for item in shopping_list:
-                if item not in s['inventory']:
-                    prob_dist += y3[(s['name'], item)] == 0
-        for s in stores:
-            for item in shopping_list:
-                prob_dist += y3[(s['name'], item)] <= x3[s['name']]
-        prob_dist += pulp.lpSum([x3[s['name']] for s in stores]) <= max_stores
-        prob_dist.solve()
-        for s in stores:
-            if x3[s['name']].varValue > 0.5:
-                items_bought = [item for item in shopping_list if y3[(s['name'], item)].varValue > 0.5]
-                plan_distance.append({'store': s['name'], 'items': items_bought})
-        total_cost3 = sum(ITEM_PRICES[item] for s in plan_distance for item in s['items'])
-        num_stores3 = len(plan_distance)
-        total_distance3 = 0
-        for s in plan_distance:
-            store = next(st for st in stores if st['name'] == s['store'])
-            total_distance3 += geodesic(user_latlon, (store['lat'], store['lon'])).km
-    return {
-        'min_cost': {
-            'plan': plan_cost,
-            'total_cost': total_cost,
-            'num_stores': num_stores,
-            'total_distance': total_distance,
-            'status': pulp.LpStatus[prob_cost.status],
-            'label': 'Minimize Cost'
-        },
-        'min_stores': {
-            'plan': plan_stores,
-            'total_cost': total_cost2,
-            'num_stores': num_stores2,
-            'total_distance': total_distance2,
-            'status': pulp.LpStatus[prob_stores.status],
-            'label': 'Minimize Number of Stores'
-        },
-        'min_distance': {
-            'plan': plan_distance,
-            'total_cost': total_cost3,
-            'num_stores': num_stores3,
-            'total_distance': total_distance3,
-            'status': pulp.LpStatus[prob_dist.status] if user_latlon else None,
-            'label': 'Minimize Distance'
-        } if user_latlon else None
-    }
+    # Decision variable for each (item, store) pair: 1 if item bought at store, 0 otherwise
+    item_store_vars = pulp.LpVariable.dicts(
+        "ItemStore",
+        ((item, store) for item in item_names for store in store_names),
+        cat='Binary'
+    )
+
+    # Objective: Minimize total cost
+    prob += pulp.lpSum(
+        item_store_matrix[i]['stores'][j]['price'] * item_store_vars[(item_names[i], store_names[j])]
+        for i in range(len(item_names))
+        for j in range(len(store_names))
+    ), "TotalCost"
+
+    # Each item must be bought from exactly one store (with inventory > 0)
+    for i, item in enumerate(item_names):
+        prob += pulp.lpSum(
+            item_store_vars[(item, store_names[j])]
+            for j in range(len(store_names))
+            if item_store_matrix[i]['stores'][j]['inventory'] > 0
+        ) == 1, f"Item_{item}_Constraint"
+
+    # Can only buy an item from a store if that store has inventory (binary or not)
+    for i, item in enumerate(item_names):
+        for j, store in enumerate(store_names):
+            if item_store_matrix[i]['stores'][j]['inventory'] == 0:
+                prob += item_store_vars[(item, store)] == 0, f"NoInventory_{item}_{store}"
+
+    # Store is visited if any item is bought there
+    store_vars = pulp.LpVariable.dicts("Store", store_names, cat='Binary')
+    for store in store_names:
+        for item in item_names:
+            prob += item_store_vars[(item, store)] <= store_vars[store], f"Link_{item}_{store}"
+
+    # Maximum number of stores to visit
+    prob += pulp.lpSum([store_vars[store] for store in store_names]) <= max_stores, "MaxStoresConstraint"
+
+    # Minimum number of stores to visit (optional, for testing)
+    if min_stores is not None:
+        prob += pulp.lpSum([store_vars[store] for store in store_names]) >= min_stores, "MinStoresConstraint"
+
+    # Solve the problem
+    prob.solve()
+    print("Status:", pulp.LpStatus[prob.status])
+
+    # Collect results
+    total_cost = pulp.value(prob.objective)
+    plans = []
+    for v in prob.variables():
+        if v.varValue and v.varValue > 0:
+            plans.append((v.name, v.varValue))
+    return plans, total_cost
+def translate_ip_result_to_plan(ip_result):
+    """
+    Input: List of tuples (variable_name, value)
+    Output: Dictionary mapping store names to list of items to buy there
+    """
+    plan = {}
+    # Pattern extracts two groups inside parentheses, accounting for spaces, underscores, and quotes
+    pattern = r"ItemStore_\('([^']+)',_?'([^']+)'\)"
+
+    for var_name, value in ip_result:
+        if value > 0 and var_name.startswith("ItemStore_"):
+            match = re.match(pattern, var_name)
+            if match:
+                item = match.group(1).replace('_', ' ')
+                store = match.group(2).replace('_', ' ')
+                if store not in plan:
+                    plan[store] = []
+                plan[store].append(item)
+            else:
+                print(f"Warning: could not parse variable name: {var_name}")
+
+    return plan

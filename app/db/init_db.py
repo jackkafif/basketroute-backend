@@ -122,7 +122,6 @@ def create_fake_data():
     conn.close()
 
 
-
 def create_indices(conn):
     c = conn.cursor()
 
