@@ -33,7 +33,7 @@ def translate_ip_result_to_plan(result, items, stores):
         'status': result['status']
     }
 
-def optimize(store_item_prices, item_requirements):
+def optimize(store_item_prices, item_requirements, max_stores=5):
     """
     Optimize the shopping plan to minimize cost while ensuring each item is bought from exactly one store.
     
@@ -49,56 +49,75 @@ def optimize(store_item_prices, item_requirements):
     if not isinstance(store_item_prices, list) or not all(isinstance(x, tuple) for x in store_item_prices):
         raise ValueError("store_item_prices must be a list of tuples (store, item, price, inventory)")
     
-    return assignmentSolver(store_item_prices, item_requirements)
+    return assignmentSolver(store_item_prices, item_requirements, max_stores)
 
-def assignmentSolver(store_item_prices, item_requirements):
-    # Build ordered list of items from store_item_prices
-    item_list = sorted(list({x[1] for x in store_item_prices}))
-    store_list = sorted(list({x[0] for x in store_item_prices}))
+def assignmentSolver(store_item_prices, item_requirements, max_stores=5):
+    # store_item_prices: [(store_id, item_id, price, inventory), …]
+    # item_requirements: { item_id: required_qty, … }
+    # max_stores: maximum distinct stores you may visit
 
-    # Build mapping for price and inventory lookup
-    price = {}
-    inventory = {}
-    for s, i, pr, inv in store_item_prices:
-        price[(s, i)] = pr
-        inventory[(s, i)] = inv
+    # 1) debug prints
+    print(f"Store_item_prices: {store_item_prices}")
+    print(f"Item requirements: {item_requirements}")
+    print(f"Max stores: {max_stores}")
 
-    # Find for each item which stores have it
-    stores_for_item = {i: [] for i in item_list}
-    for (s, i) in price:
-        stores_for_item[i].append(s)
+    # 2) collect distinct stores & items
+    store_list = sorted({s for s, _, _, _ in store_item_prices})
+    item_list  = sorted(item_requirements.keys())
 
-    # Decision variables: how many to buy from each store-item
-    x = pulp.LpVariable.dicts("Buy", price.keys(), lowBound=0, cat='Integer')
+    # 3) build price & inventory lookups
+    price     = {(s,i): p for s,i,p,inv in store_item_prices}
+    inventory = {(s,i): inv for s,i,p,inv in store_item_prices}
 
-    # Define the problem
-    prob = pulp.LpProblem("GroceryShopping", pulp.LpMinimize)
+    # 4) only consider store-item pairs with positive inventory
+    valid_pairs = [(s,i) for (s,i), inv in inventory.items() if inv > 0]
 
-    # Objective: Minimize total cost
-    prob += pulp.lpSum([price[(s, i)] * x[(s, i)] for (s, i) in price])
+    # 5) set up LP
+    prob = pulp.LpProblem("GroceryAssignment", pulp.LpMinimize)
 
-    # Each item must be bought in required quantity
-    for idx, i in enumerate(item_list):
-        prob += pulp.lpSum([x[(s, i)] for s in stores_for_item[i]]) >= item_requirements[idx]
+    # integer: x[s,i] = how many units of item i to buy at store s
+    x = pulp.LpVariable.dicts("Qty", valid_pairs, lowBound=0, cat="Integer")
 
-    # Cannot exceed inventory in any store for any item
-    for (s, i) in price:
-        prob += x[(s, i)] <= inventory[(s, i)]
+    # binary: v[s] = 1 if we visit store s at all
+    v = pulp.LpVariable.dicts("UseStore", store_list, cat="Binary")
 
-    # Solve
-    prob.solve()
+    # 6) objective = sum over (s,i) of price × qty
+    prob += pulp.lpSum(price[(s,i)] * x[(s,i)] for (s,i) in valid_pairs)
 
+    # 7) inventory constraints
+    for (s,i) in valid_pairs:
+        prob += x[(s,i)] <= inventory[(s,i)], f"Inv_{s}_{i}"
+
+    # 8) satisfy item requirements (allow splitting across stores)
+    for i in item_list:
+        supply_vars = [x[(s,i)] for s in store_list if (s,i) in inventory]
+        prob += pulp.lpSum(supply_vars) >= item_requirements[i], f"Req_{i}"
+
+    # 9) link quantity → store used
+    for (s,i) in valid_pairs:
+        # if we buy anything from s for item i, v[s] must be 1
+        prob += x[(s,i)] <= item_requirements[i] * v[s], f"Link_{s}_{i}"
+
+    # 10) cap the number of stores
+    prob += pulp.lpSum(v[s] for s in store_list) <= max_stores, "MaxStores"
+
+    # 11) solve quietly
+    prob.solve(pulp.PULP_CBC_CMD(msg=False))
+
+    # 12) extract plan
+    status = pulp.LpStatus[prob.status]
     plan = []
-    for (s, i) in x:
-        qty = int(pulp.value(x[(s, i)]))
-        if qty > 0:
-            plan.append((s, i, qty))
-    total_cost = pulp.value(prob.objective)
+    if status == "Optimal":
+        for (s,i) in valid_pairs:
+            qty = pulp.value(x[(s,i)])
+            if qty and qty > 0.5:
+                plan.append((s, i, int(qty)))
 
+    total_cost = pulp.value(prob.objective)
     return {
-        "plan": plan,
-        "total_cost": total_cost,
-        "status": pulp.LpStatus[prob.status]
+        "plan":       plan,        # e.g. [(2, 49, 2), (8, 49, 1), (5,  2, 1), …]
+        "total_cost": total_cost, # float
+        "status":     status      # e.g. "Optimal"
     }
 
 if __name__ == "__main__":

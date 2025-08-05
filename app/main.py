@@ -54,10 +54,12 @@ def index():
 def optimize_shopping():
     data = request.json
     item_ids_reqs = data.get('items', [])
+    max_stores = int(data.get('max_stores', 5))
+    print(request.json)
+    max_stores = min(max_stores, 5)
+    print(max_stores)
     items = get_products_by_ids(create_connection(), [item["product_id"] for item in item_ids_reqs])
     item_names = [item['name'] for item in items]
-    requirements = [item['quantity'] for item in item_ids_reqs]
-    # store_names = data.get('stores', [])
     print("Received item names:", item_names)
     if not item_names:
         return jsonify({'error': 'Item names and store names are required'}), 400
@@ -72,7 +74,8 @@ def optimize_shopping():
     if not item_names or not store_names or not item_store_matrix:
         return jsonify({'error': 'Invalid input data'}), 400
 
-    result = optimize(item_store_matrix, requirements)
+    requirements = {item['product_id']: item['quantity'] for item in item_ids_reqs}
+    result = optimize(item_store_matrix, requirements, max_stores)
     if not result:
         return jsonify({'error': 'Optimization failed'}), 500
     translated = translate_ip_result_to_plan(result, items, stores)
