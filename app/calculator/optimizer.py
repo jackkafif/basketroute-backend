@@ -1,80 +1,139 @@
 import pulp
 import re
+import sqlite3
+import os
 
-def solve_shopping_ip(item_names, store_names, item_store_matrix, max_stores=3, min_stores=0):
-    prob = pulp.LpProblem("GroceryShopping", pulp.LpMinimize)
+DATABASE = 'db/fake_basketroute.db'
 
-    # Decision variable for each (item, store) pair: 1 if item bought at store, 0 otherwise
-    item_store_vars = pulp.LpVariable.dicts(
-        "ItemStore",
-        ((item, store) for item in item_names for store in store_names),
-        cat='Binary'
-    )
+from db.query import (
+    build_item_store_matrix,
+    get_all_products,
+    get_all_stores,
+)
 
-    # Objective: Minimize total cost
-    prob += pulp.lpSum(
-        item_store_matrix[i]['stores'][j]['price'] * item_store_vars[(item_names[i], store_names[j])]
-        for i in range(len(item_names))
-        for j in range(len(store_names))
-    ), "TotalCost"
+def create_connection():
+    db_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), DATABASE)
+    conn = sqlite3.connect(db_path)
+    return conn
 
-    # Each item must be bought from exactly one store (with inventory > 0)
-    for i, item in enumerate(item_names):
-        prob += pulp.lpSum(
-            item_store_vars[(item, store_names[j])]
-            for j in range(len(store_names))
-            if item_store_matrix[i]['stores'][j]['inventory'] > 0
-        ) == 1, f"Item_{item}_Constraint"
-
-    # Can only buy an item from a store if that store has inventory (binary or not)
-    for i, item in enumerate(item_names):
-        for j, store in enumerate(store_names):
-            if item_store_matrix[i]['stores'][j]['inventory'] == 0:
-                prob += item_store_vars[(item, store)] == 0, f"NoInventory_{item}_{store}"
-
-    # Store is visited if any item is bought there
-    store_vars = pulp.LpVariable.dicts("Store", store_names, cat='Binary')
-    for store in store_names:
-        for item in item_names:
-            prob += item_store_vars[(item, store)] <= store_vars[store], f"Link_{item}_{store}"
-
-    # Maximum number of stores to visit
-    prob += pulp.lpSum([store_vars[store] for store in store_names]) <= max_stores, "MaxStoresConstraint"
-
-    # Minimum number of stores to visit (optional, for testing)
-    if min_stores is not None:
-        prob += pulp.lpSum([store_vars[store] for store in store_names]) >= min_stores, "MinStoresConstraint"
-
-    # Solve the problem
-    prob.solve()
-    print("Status:", pulp.LpStatus[prob.status])
-
-    # Collect results
-    total_cost = pulp.value(prob.objective)
-    plans = []
-    for v in prob.variables():
-        if v.varValue and v.varValue > 0:
-            plans.append((v.name, v.varValue))
-    return plans, total_cost
-def translate_ip_result_to_plan(ip_result):
+def translate_ip_result_to_plan(result, items, stores):
     """
-    Input: List of tuples (variable_name, value)
-    Output: Dictionary mapping store names to list of items to buy there
+    Translate the integer programming result into a human-readable shopping plan.
+    :param result: Dictionary with keys 'plan' (list of tuples (store_id, item_id, quantity)) and 'total_cost'
+    :param items: List of item details (dicts with 'id' and 'name')
+    :param stores: List of store details (dicts with 'id' and 'name')
+    :return: dictionary by store with items and quantities to buy and total cost 
     """
     plan = {}
-    # Pattern extracts two groups inside parentheses, accounting for spaces, underscores, and quotes
-    pattern = r"ItemStore_\('([^']+)',_?'([^']+)'\)"
+    item_dict = {item['id']: item['name'] for item in items}
+    store_dict = {store['id']: store['name'] for store in stores}
+    for store_id, item_id, quantity in result['plan']:
+        plan[store_dict[store_id]] = plan.get(store_dict[store_id], [])
+        plan[store_dict[store_id]].append({
+            'item': item_dict[item_id],
+            'quantity': quantity
+        })
+    return {
+        'plan': plan,
+        'total_cost': result['total_cost'],
+        'status': result['status']
+    }
 
-    for var_name, value in ip_result:
-        if value > 0 and var_name.startswith("ItemStore_"):
-            match = re.match(pattern, var_name)
-            if match:
-                item = match.group(1).replace('_', ' ')
-                store = match.group(2).replace('_', ' ')
-                if store not in plan:
-                    plan[store] = []
-                plan[store].append(item)
-            else:
-                print(f"Warning: could not parse variable name: {var_name}")
+def optimize(store_item_prices, item_requirements):
+    """
+    Optimize the shopping plan to minimize cost while ensuring each item is bought from exactly one store.
+    
+    :param store_item_prices: List of tuples (store_id, item_id, price, inventory)
+    :param item_requirements: List of integers corresponding to the required quantity for each item
+    :return: Dictionary with the optimal shopping plan and total cost
 
-    return plan
+    requires:
+        len(store_item_prices) == len(item_requirements)
+    """
+    
+    # Validate inputs
+    if not isinstance(store_item_prices, list) or not all(isinstance(x, tuple) for x in store_item_prices):
+        raise ValueError("store_item_prices must be a list of tuples (store, item, price, inventory)")
+    
+    return assignmentSolver(store_item_prices, item_requirements)
+
+def assignmentSolver(store_item_prices, item_requirements):
+    # Build ordered list of items from store_item_prices
+    item_list = sorted(list({x[1] for x in store_item_prices}))
+    store_list = sorted(list({x[0] for x in store_item_prices}))
+
+    # Build mapping for price and inventory lookup
+    price = {}
+    inventory = {}
+    for s, i, pr, inv in store_item_prices:
+        price[(s, i)] = pr
+        inventory[(s, i)] = inv
+
+    # Find for each item which stores have it
+    stores_for_item = {i: [] for i in item_list}
+    for (s, i) in price:
+        stores_for_item[i].append(s)
+
+    # Decision variables: how many to buy from each store-item
+    x = pulp.LpVariable.dicts("Buy", price.keys(), lowBound=0, cat='Integer')
+
+    # Define the problem
+    prob = pulp.LpProblem("GroceryShopping", pulp.LpMinimize)
+
+    # Objective: Minimize total cost
+    prob += pulp.lpSum([price[(s, i)] * x[(s, i)] for (s, i) in price])
+
+    # Each item must be bought in required quantity
+    for idx, i in enumerate(item_list):
+        prob += pulp.lpSum([x[(s, i)] for s in stores_for_item[i]]) >= item_requirements[idx]
+
+    # Cannot exceed inventory in any store for any item
+    for (s, i) in price:
+        prob += x[(s, i)] <= inventory[(s, i)]
+
+    # Solve
+    prob.solve()
+
+    plan = []
+    for (s, i) in x:
+        qty = int(pulp.value(x[(s, i)]))
+        if qty > 0:
+            plan.append((s, i, qty))
+    total_cost = pulp.value(prob.objective)
+
+    return {
+        "plan": plan,
+        "total_cost": total_cost,
+        "status": pulp.LpStatus[prob.status]
+    }
+
+if __name__ == "__main__":
+    # Query database for store_item_prices, item_names, and store_names
+    num = 5
+    conn = create_connection()
+    items = get_all_products(conn)[:num]
+    requirements = [81, 2, 2, 2, 2]  # Example requirements for the first 5 items
+    conn = create_connection()
+    stores = get_all_stores(conn)
+
+    # Use first 5 items and stores for testing
+    conn = create_connection()
+    store_item_prices = build_item_store_matrix(conn, items, stores)
+    # Call the optimizer
+    result = translate_ip_result_to_plan(optimize(store_item_prices, requirements), items, stores)
+
+    print("We need to buy:")
+    for i in range(num):
+        print(f"  {requirements[i]} of {items[i]['name']}")
+
+    print("\nOptimal shopping plan:")
+    for store, purchases in result['plan'].items():
+        print(f"At {store}, buy:")
+        for purchase in purchases:
+            # X of Y for $Z Each for a total of $W
+            item = purchase['item']
+            quantity = purchase['quantity']
+            price_per_item = next((p for (s, i, p, inv) in store_item_prices if s == next(sid for sid, sname in [(st['id'], st['name']) for st in stores] if sname == store) and i == next(iid for iid, iname in [(it['id'], it['name']) for it in items] if iname == item)), None)
+            total_price = price_per_item * quantity
+            print(f"  - {quantity} of {item} for ${price_per_item:.2f} each, total ${total_price:.2f}")
+    print(f"\nTotal cost: ${result['total_cost']:.2f}")

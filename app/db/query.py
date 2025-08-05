@@ -57,46 +57,36 @@ def get_products_grouped_by_category(conn):
         })
     return grouped_products
 
-def build_item_store_matrix(conn, item_names, store_names):
+def build_item_store_matrix(conn, items, stores):
     """
     Builds a matrix of items and their corresponding stores with prices and inventory.
     Args:
-        item_names (list): List of item names.
-        store_names (list): List of store names.
+        items (list of dict): List of item details .
+        stores (list of dict): List of store details.
     Returns:
-        item_store_matrix (list of dict): List of dictionaries where each dictionary represents an item
-            with its prices and inventory in different stores."""
+        item_store_matrix (list of tuples (store_id, product_id, price, inventory)): List of tuples where each tuple contains
+        the store id, product id, price, and inventory.
+    """
     cursor = conn.cursor()
+    item_names = [item['name'] for item in items]
+    store_ids = [store['id'] for store in stores]
     cursor.execute('''
-        SELECT sp.store_id, p.name, sp.price, sp.inventory
+        SELECT sp.store_id, p.id, sp.price, sp.inventory
         FROM StoreProducts sp
         JOIN Products p ON sp.product_id = p.id
         WHERE p.name IN ({})
-    '''.format(','.join(['?'] * len(item_names))), item_names)
+    '''.format(','.join(['?'] * len(items))), item_names)
     
     rows = cursor.fetchall()
 
     item_store_matrix = []
-    for item in item_names:
-        item_data = {'name': item, 'stores': []}
-        for store_name in store_names:
-            store_data = {
-                'store_name': store_name,
-                'price': 0.0,
-                'inventory': 0.0
-            }
-            for row in rows:
-                store_id, product_name, price, inventory = row
-                if product_name == item and store_name in store_names:
-                    store_data['store_name'] = store_name
-                    store_data['price'] = price
-                    store_data['inventory'] = inventory
-                    break
-            item_data['stores'].append(store_data)
+    for store_id, product_id, price, inventory in rows:
+        if store_id in store_ids:
+            item_store_matrix.append((store_id, product_id, price, inventory))
 
-        item_store_matrix.append(item_data)
-    
+    conn.close()
     return item_store_matrix
+
     
 def get_all_products(conn):
     cursor = conn.cursor()
