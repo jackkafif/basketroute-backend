@@ -80,6 +80,31 @@ def all_stores():
     stores = get_all_stores(conn)
     return jsonify(stores)
 
+@app.route('/api/store_inventories')
+def store_inventories():
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT s.name, p.name, sp.price, sp.inventory
+        FROM StoreProducts sp
+        JOIN Stores s ON sp.store_id = s.id
+        JOIN Products p ON sp.product_id = p.id
+    ''')
+    rows = cursor.fetchall()
+    conn.close()
+
+    inventories = {}
+    for store_name, product_name, price, inventory in rows:
+        if store_name not in inventories:
+            inventories[store_name] = []
+        inventories[store_name].append({
+            'product': product_name,
+            'price': price,
+            'inventory': inventory
+        })
+    
+    return jsonify(inventories)
+
 @app.route('/api/stores_like/<string:name>')
 def stores_like(name):
     conn = create_connection()
