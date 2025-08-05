@@ -9,6 +9,7 @@ from flask_cors import CORS
 import sqlite3
 
 from app.calculator.optimizer import optimize, translate_ip_result_to_plan
+from app.calculator.pathOptimize import optimize_path
 from app.db.query import (
     get_products_by_names, get_stores_by_names,
     get_all_products, get_product_prices, 
@@ -74,6 +75,28 @@ def optimize_shopping():
     translated = translate_ip_result_to_plan(result, items, stores)
 
     print(json.dumps(translated))
+    plan = translated.get('plan', {})
+    stores_dict = {store['name']: {"lat" : store['lat'], "lon" : store['lon']} for store in stores}
+    store_list = [{'name': store, 'lat': stores_dict[store]['lat'], 'lon': stores_dict[store]['lon']} for store in plan.keys()]
+    for store in store_list:
+        for s in stores:
+            if s['name'] == store['name']:
+                store['lat'] = s['lat']
+                store['lon'] = s['lon']
+                break
+    optimized_stores = optimize_path(store_list, starting_point=(40.7128, -74.0060))  # Example starting point (New York City)
+    if optimized_stores["status"] != "Optimal":
+        return jsonify({'error': 'Path optimization failed'}), 500
+    optimized_plan = optimized_stores['ordered_stores']
+    distance = optimized_stores['total_distance_meters']
+    print("Optimized path:", [s['name'] for s in optimized_plan])
+    print("plan :", plan)
+    translated['plan'] = [
+        {'store': store['name'], 'items': plan[store['name']]} for store in optimized_plan
+    ]
+    translated['cost'] = result['total_cost']
+    translated['distance'] = distance
+    print("Translated plan:", translated)
 
     return jsonify(translated)
 

@@ -176,6 +176,7 @@
             const plan = response.plan;
             const cost = response.cost;
             const status = response.status || '';
+            const distance = response.distance;
             const container = document.createElement('div');
 
             // Show cost at top
@@ -183,7 +184,7 @@
             costDiv.style.fontWeight = "bold";
             costDiv.style.fontSize = "1.15rem";
             costDiv.style.marginBottom = "10px";
-            costDiv.textContent = `Total Cost: $${cost.toFixed(2)}`;
+            costDiv.textContent = `Total Cost: $${cost ? cost.toFixed(2) : "—"}`;
             container.appendChild(costDiv);
 
             // Show status if present
@@ -191,31 +192,41 @@
                 const statusDiv = document.createElement('div');
                 statusDiv.style.fontWeight = "500";
                 statusDiv.style.fontSize = "1.01rem";
-                statusDiv.style.marginBottom = "18px";
+                statusDiv.style.marginBottom = "8px";
                 statusDiv.textContent = `Status: ${status}`;
                 container.appendChild(statusDiv);
             }
+            // Show total distance if present
+            if (typeof distance === "number") {
+                const distanceDiv = document.createElement('div');
+                distanceDiv.style.fontSize = "1.01rem";
+                distanceDiv.style.marginBottom = "16px";
+                distanceDiv.textContent = `Total Distance: ${distance.toLocaleString(undefined, {maximumFractionDigits: 1})} meters`;
+                container.appendChild(distanceDiv);
+            }
 
             // Show each store and items with quantity
-            Object.keys(plan).forEach(store => {
-                const card = document.createElement('div');
-                card.className = 'plan-card';
-                const h4 = document.createElement('h4');
-                h4.textContent = store;
-                card.appendChild(h4);
+            if (Array.isArray(plan)) {
+                plan.forEach(storeObj => {
+                    const card = document.createElement('div');
+                    card.className = 'plan-card';
+                    const h4 = document.createElement('h4');
+                    h4.textContent = storeObj.store;
+                    card.appendChild(h4);
 
-                const ul = document.createElement('ul');
-                ul.className = 'plan-list';
-                plan[store].forEach(entry => {
-                    const li = document.createElement('li');
-                    li.textContent = entry.quantity > 1 
-                        ? `${entry.item} (x${entry.quantity})`
-                        : entry.item;
-                    ul.appendChild(li);
+                    const ul = document.createElement('ul');
+                    ul.className = 'plan-list';
+                    (storeObj.items || []).forEach(entry => {
+                        const li = document.createElement('li');
+                        li.textContent = entry.quantity > 1 
+                            ? `${entry.item} (x${entry.quantity})`
+                            : entry.item;
+                        ul.appendChild(li);
+                    });
+                    card.appendChild(ul);
+                    container.appendChild(card);
                 });
-                card.appendChild(ul);
-                container.appendChild(card);
-            });
+            }
             return container;
         }
 
