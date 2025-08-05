@@ -128,6 +128,18 @@ def get_products_by_names(conn, product_names):
         'unit': product[3]
     } for product in products]
 
+def get_products_by_ids(conn, product_ids):
+    cursor = conn.cursor()
+    cursor.execute('SELECT id, name, category, unit FROM Products WHERE id IN ({})'.format(','.join(['?'] * len(product_ids))), product_ids)
+    products = cursor.fetchall()
+    conn.close()
+    return [{
+        'id': product[0],
+        'name': product[1],
+        'category': product[2],
+        'unit': product[3]
+    } for product in products]
+
 def get_product_prices(conn, product_name):
     cursor = conn.cursor()
     cursor.execute('''

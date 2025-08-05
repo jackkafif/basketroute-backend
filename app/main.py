@@ -11,7 +11,7 @@ import sqlite3
 from app.calculator.optimizer import optimize, translate_ip_result_to_plan
 from app.calculator.pathOptimize import optimize_path
 from app.db.query import (
-    get_products_by_names, get_stores_by_names,
+    get_products_by_names, get_stores_by_names, get_products_by_ids,
     get_all_products, get_product_prices, 
     get_stores_nearby, get_products_grouped_by_category, 
     get_all_stores, get_stores_like, build_item_store_matrix
@@ -53,14 +53,17 @@ def index():
 @app.route('/api/optimize', methods=['POST'])
 def optimize_shopping():
     data = request.json
-    item_names = data.get('items', [])
-    store_names = data.get('stores', [])
+    item_ids_reqs = data.get('items', [])
+    items = get_products_by_ids(create_connection(), [item["product_id"] for item in item_ids_reqs])
+    item_names = [item['name'] for item in items]
+    requirements = [item['quantity'] for item in item_ids_reqs]
+    # store_names = data.get('stores', [])
     print("Received item names:", item_names)
-    print("Received store names:", store_names)
-    if not item_names or not store_names:
+    if not item_names:
         return jsonify({'error': 'Item names and store names are required'}), 400
     items = get_products_by_names(create_connection(), item_names)
-    stores = get_stores_by_names(create_connection(), store_names)
+    stores = get_all_stores(create_connection())
+    store_names = [store['name'] for store in stores]
     item_store_matrix = build_item_store_matrix(create_connection(), items, stores)
     print("Item-Store Matrix:", item_store_matrix)
     if not item_store_matrix:
@@ -69,7 +72,7 @@ def optimize_shopping():
     if not item_names or not store_names or not item_store_matrix:
         return jsonify({'error': 'Invalid input data'}), 400
 
-    result = optimize(item_store_matrix, [1] * len(item_names))
+    result = optimize(item_store_matrix, requirements)
     if not result:
         return jsonify({'error': 'Optimization failed'}), 500
     translated = translate_ip_result_to_plan(result, items, stores)
