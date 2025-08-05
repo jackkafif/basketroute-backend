@@ -8,8 +8,9 @@ from geopy.distance import geodesic
 from flask_cors import CORS
 import sqlite3
 
-from app.calculator.optimizer import solve_shopping_ip, translate_ip_result_to_plan
+from app.calculator.optimizer import optimize, translate_ip_result_to_plan
 from app.db.query import (
+    get_products_by_names, get_stores_by_names,
     get_all_products, get_product_prices, 
     get_stores_nearby, get_products_grouped_by_category, 
     get_all_stores, get_stores_like, build_item_store_matrix
@@ -55,7 +56,11 @@ def optimize_shopping():
     store_names = data.get('stores', [])
     print("Received item names:", item_names)
     print("Received store names:", store_names)
-    item_store_matrix = build_item_store_matrix(create_connection(), item_names, store_names)
+    if not item_names or not store_names:
+        return jsonify({'error': 'Item names and store names are required'}), 400
+    items = get_products_by_names(create_connection(), item_names)
+    stores = get_stores_by_names(create_connection(), store_names)
+    item_store_matrix = build_item_store_matrix(create_connection(), items, stores)
     print("Item-Store Matrix:", item_store_matrix)
     if not item_store_matrix:
         return jsonify({'error': 'No valid item-store matrix found'}), 400
@@ -63,16 +68,14 @@ def optimize_shopping():
     if not item_names or not store_names or not item_store_matrix:
         return jsonify({'error': 'Invalid input data'}), 400
 
-    plans, total_cost = solve_shopping_ip(item_names, store_names, item_store_matrix)
-    translated = translate_ip_result_to_plan(plans)
+    result = optimize(item_store_matrix, [1] * len(item_names))
+    if not result:
+        return jsonify({'error': 'Optimization failed'}), 500
+    translated = translate_ip_result_to_plan(result, items, stores)
 
-    results = {}
-    results['Plan'] = translated
-    results['Cost'] = total_cost
+    print(json.dumps(translated))
 
-    print(json.dumps(results))
-
-    return jsonify(results)
+    return jsonify(translated)
 
 @app.route('/api/all_stores')
 def all_stores():

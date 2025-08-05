@@ -25,6 +25,22 @@ def get_all_stores(conn):
         'website': store[6]
     } for store in stores]
 
+def get_stores_by_names(conn, store_names):
+    cursor = conn.cursor()
+    placeholders = ', '.join(['?'] * len(store_names))
+    cursor.execute(f'SELECT id, name, lat, lon, address, phone, website FROM Stores WHERE name IN ({placeholders})', store_names)
+    stores = cursor.fetchall()
+    conn.close()
+    return [{
+        'id': store[0],
+        'name': store[1],
+        'lat': store[2],
+        'lon': store[3],
+        'address': store[4],
+        'phone': store[5],
+        'website': store[6]
+    } for store in stores]
+
 def get_stores_like(conn, name):
     cursor = conn.cursor()
     cursor.execute('SELECT id, name, lat, lon, address, phone, website FROM Stores WHERE name LIKE ?', (f'%{name}%',))
@@ -68,6 +84,7 @@ def build_item_store_matrix(conn, items, stores):
         the store id, product id, price, and inventory.
     """
     cursor = conn.cursor()
+    print(items, stores)
     item_names = [item['name'] for item in items]
     store_ids = [store['id'] for store in stores]
     cursor.execute('''
@@ -86,11 +103,22 @@ def build_item_store_matrix(conn, items, stores):
 
     conn.close()
     return item_store_matrix
-
     
 def get_all_products(conn):
     cursor = conn.cursor()
     cursor.execute('SELECT id, name, category, unit FROM Products')
+    products = cursor.fetchall()
+    conn.close()
+    return [{
+        'id': product[0],
+        'name': product[1],
+        'category': product[2],
+        'unit': product[3]
+    } for product in products]
+
+def get_products_by_names(conn, product_names):
+    cursor = conn.cursor()
+    cursor.execute('SELECT id, name, category, unit FROM Products WHERE name IN ({})'.format(','.join(['?'] * len(product_names))), product_names)
     products = cursor.fetchall()
     conn.close()
     return [{

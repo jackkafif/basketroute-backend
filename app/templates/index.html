@@ -171,73 +171,86 @@
             makeSelectablePills('items-grid', items.map(i => i.name), selectedItems);
         });
 
-        // Pretty print the plan
-    function showPlanAndCost(response) {
-        const plan = response.Plan;
-        const cost = response.Cost;
-        const container = document.createElement('div');
+        // Pretty print the plan and cost (updated for new plan format)
+        function showPlanAndCost(response) {
+            const plan = response.plan;
+            const cost = response.cost;
+            const status = response.status || '';
+            const container = document.createElement('div');
 
-        // Show cost at top
-        const costDiv = document.createElement('div');
-        costDiv.style.fontWeight = "bold";
-        costDiv.style.fontSize = "1.15rem";
-        costDiv.style.marginBottom = "18px";
-        costDiv.textContent = `Total Cost: $${cost.toFixed(2)}`;
-        container.appendChild(costDiv);
+            // Show cost at top
+            const costDiv = document.createElement('div');
+            costDiv.style.fontWeight = "bold";
+            costDiv.style.fontSize = "1.15rem";
+            costDiv.style.marginBottom = "10px";
+            costDiv.textContent = `Total Cost: $${cost.toFixed(2)}`;
+            container.appendChild(costDiv);
 
-        // Show each store and items
-        Object.keys(plan).forEach(store => {
-            const card = document.createElement('div');
-            card.className = 'plan-card';
-            const h4 = document.createElement('h4');
-            h4.textContent = store;
-            card.appendChild(h4);
-
-            const ul = document.createElement('ul');
-            ul.className = 'plan-list';
-            plan[store].forEach(item => {
-                const li = document.createElement('li');
-                li.textContent = item;
-                ul.appendChild(li);
-            });
-            card.appendChild(ul);
-            container.appendChild(card);
-        });
-        return container;
-    }
-
-    // Handle form submission
-    document.getElementById('optimize-form').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const resultDiv = document.getElementById('result');
-        resultDiv.innerHTML = "";
-
-        if (selectedStores.size === 0 || selectedItems.size === 0) {
-            resultDiv.innerHTML = '<div class="error">Please select at least one store and one item.</div>';
-            return;
-        }
-
-        const res = await fetch('/api/optimize', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                stores: Array.from(selectedStores),
-                items: Array.from(selectedItems)
-            })
-        });
-
-        if (res.ok) {
-            const data = await res.json();
-            if (data && typeof data === "object" && data.Plan && Object.keys(data.Plan).length) {
-                resultDiv.innerHTML = '';
-                resultDiv.appendChild(showPlanAndCost(data));
-            } else {
-                resultDiv.innerHTML = '<div class="error">No plan returned by optimizer.</div>';
+            // Show status if present
+            if (status) {
+                const statusDiv = document.createElement('div');
+                statusDiv.style.fontWeight = "500";
+                statusDiv.style.fontSize = "1.01rem";
+                statusDiv.style.marginBottom = "18px";
+                statusDiv.textContent = `Status: ${status}`;
+                container.appendChild(statusDiv);
             }
-        } else {
-            resultDiv.innerHTML = '<div class="error">Optimization failed. Please try again.</div>';
+
+            // Show each store and items with quantity
+            Object.keys(plan).forEach(store => {
+                const card = document.createElement('div');
+                card.className = 'plan-card';
+                const h4 = document.createElement('h4');
+                h4.textContent = store;
+                card.appendChild(h4);
+
+                const ul = document.createElement('ul');
+                ul.className = 'plan-list';
+                plan[store].forEach(entry => {
+                    const li = document.createElement('li');
+                    li.textContent = entry.quantity > 1 
+                        ? `${entry.item} (x${entry.quantity})`
+                        : entry.item;
+                    ul.appendChild(li);
+                });
+                card.appendChild(ul);
+                container.appendChild(card);
+            });
+            return container;
         }
-    });
+
+        // Handle form submission
+        document.getElementById('optimize-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = "";
+
+            if (selectedStores.size === 0 || selectedItems.size === 0) {
+                resultDiv.innerHTML = '<div class="error">Please select at least one store and one item.</div>';
+                return;
+            }
+
+            const res = await fetch('/api/optimize', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    stores: Array.from(selectedStores),
+                    items: Array.from(selectedItems)
+                })
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                if (data && typeof data === "object" && data.plan && Object.keys(data.plan).length) {
+                    resultDiv.innerHTML = '';
+                    resultDiv.appendChild(showPlanAndCost(data));
+                } else {
+                    resultDiv.innerHTML = '<div class="error">No plan returned by optimizer.</div>';
+                }
+            } else {
+                resultDiv.innerHTML = '<div class="error">Optimization failed. Please try again.</div>';
+            }
+        });
     </script>
 </body>
 </html>

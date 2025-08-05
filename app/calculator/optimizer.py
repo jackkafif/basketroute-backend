@@ -29,7 +29,7 @@ def translate_ip_result_to_plan(result, items, stores):
         })
     return {
         'plan': plan,
-        'total_cost': result['total_cost'],
+        'cost': result['total_cost'],
         'status': result['status']
     }
 
@@ -100,3 +100,34 @@ def assignmentSolver(store_item_prices, item_requirements):
         "total_cost": total_cost,
         "status": pulp.LpStatus[prob.status]
     }
+
+if __name__ == "__main__":
+    # Query database for store_item_prices, item_names, and store_names
+    num = 5
+    conn = create_connection()
+    items = get_all_products(conn)[:num]
+    requirements = [81, 2, 2, 2, 2]  # Example requirements for the first 5 items
+    conn = create_connection()
+    stores = get_all_stores(conn)
+
+    # Use first 5 items and stores for testing
+    conn = create_connection()
+    store_item_prices = build_item_store_matrix(conn, items, stores)
+    # Call the optimizer
+    result = translate_ip_result_to_plan(optimize(store_item_prices, requirements), items, stores)
+
+    print("We need to buy:")
+    for i in range(num):
+        print(f"  {requirements[i]} of {items[i]['name']}")
+
+    print("\nOptimal shopping plan:")
+    for store, purchases in result['plan'].items():
+        print(f"At {store}, buy:")
+        for purchase in purchases:
+            # X of Y for $Z Each for a total of $W
+            item = purchase['item']
+            quantity = purchase['quantity']
+            price_per_item = next((p for (s, i, p, inv) in store_item_prices if s == next(sid for sid, sname in [(st['id'], st['name']) for st in stores] if sname == store) and i == next(iid for iid, iname in [(it['id'], it['name']) for it in items] if iname == item)), None)
+            total_price = price_per_item * quantity
+            print(f"  - {quantity} of {item} for ${price_per_item:.2f} each, total ${total_price:.2f}")
+    print(f"\nTotal cost: ${result['total_cost']:.2f}")
